@@ -20,13 +20,15 @@ class RegisUserController extends Controller
         if(Auth::user()->level == 'peserta'){
             $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
             $status = '';
+            $lomba = 1;
             if ($user !=null) {
                $status = $user->status_pembayaran;
             }
             return view('peserta.dashboard',[
                 'data' => 'pnbwdc',
                 'status' => $status,
-                'regisuser' => $user
+                'regisuser' => $user,
+                'lomba' => $lomba
             ]);
         }
         else{
@@ -40,13 +42,15 @@ class RegisUserController extends Controller
         if(Auth::user()->level == 'peserta'){
             $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
             $status = '';
+            $lomba = 2;
             if ($user !=null) {
                $status = $user->status_pembayaran;
             }
             return view('peserta.dashboard',[
                 'data' => 'pnbdc',
                 'status' => $status,
-                'regisuser' => $user
+                'regisuser' => $user,
+                'lomba' => $lomba
             ]);
         }
         else{
@@ -60,13 +64,15 @@ class RegisUserController extends Controller
         if(Auth::user()->level == 'peserta'){
             $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
             $status = '';
+            $lomba = 3;
             if ($user !=null) {
                $status = $user->status_pembayaran;
             }
             return view('peserta.dashboard',[
                 'data' => 'pnbctf',
                 'status' => $status,
-                'regisuser' => $user
+                'regisuser' => $user,
+                'lomba' => $lomba
             ]);
         }
         else{

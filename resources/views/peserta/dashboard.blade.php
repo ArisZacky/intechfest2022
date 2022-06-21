@@ -23,16 +23,79 @@
     @endif
     @if (Auth::user()->status !='belum regis')
     <div class="payment" style="text-align: center;background-color: #eee;width: 45%;margin:0 auto;padding: 20px">
-        <h2 style="padding:20px 0;color: #3e3e3e">Pembayaran</h2><br>
+        <h2 style="padding:20px 0;color: #3e3e3e">Profile Peserta</h2><br>
         <p>Anda telah terdaftar dengan no registrasi : <b>{{ $regisuser->no_registrasi }}</b></p><br>
         @if ($status == 'diterima')
-            <p style="color: #28A745;">Pembayaran sukses, silahkan menunggu untuk diinvite ke group Telegram.</p><br><br>
+        <table class="profilPeserta">
+        <tr>
+            <td class="tabel">Kategori Lomba</td>
+            <td class="tabel">:</td>
+            @if($lomba == 1)
+            <td class="tabel">Politeknik Negeri Bali Web Design Competition</td>
+            @elseif($lomba == 2)
+            <td class="tabel">Politeknik Negeri Bali Design Challenge</td>
+            @elseif($lomba == 3)
+            <td class="tabel">Politeknik Negeri Bali Capture The Flags</td>
+            @endif
+        </tr>
+        <tr>
+            <td class="tabel">Nama Peserta</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->nama_lengkap}}</td>
+        </tr>
+        <tr>
+            <td class="tabel">NIM / NIK</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->nim_nis_nik}}</td>
+        </tr>
+        @if($lomba == 1 || 2)
+        <tr>
+            <td class="tabel">Instansi</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->instansi}}</td>
+        </tr>
+        @endif
+        <tr>
+            <td class="tabel">Jurusan</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->jurusan}}</td>
+        </tr>
+        <tr>
+            <td class="tabel">No HP</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->no_hp}}</td>
+        </tr>
+        <tr>
+            <td class="tabel">ID Telegram</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->line_telegram}}</td>
+        </tr>
+        <tr>
+            <td class="tabel">Alamat</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->alamat}}</td>
+        </tr>
+        <tr>
+            <td class="tabel">Status</td>
+            <td class="tabel">:</td>
+            <td class="verified">Verified</td>
+        </tr>
+            <tr>
+                <td class="tabel">Upload Project</td>
+                <td class="tabel">:</td>
+                <td class="tabel"><input type="file" name="bukti_pembayaran" id=""></td>
+            </tr>
+        </table>
         @endif
         @if ($status == 'sudah bayar')
+            <h2 style="padding:20px 0;color: #3e3e3e">Pembayaran</h2><br>
+            <p>Anda telah terdaftar dengan no registrasi : <b>{{ $regisuser->no_registrasi }}</b></p><br>
             <p>Pembayaran anda sedang di proses, mohon menunggu info lebih lanjut.</p><br><br>
         @endif
         @if ($status == 'belum bayar')
             <div class="box-payment">
+                <h2 style="padding:20px 0;color: #3e3e3e">Pembayaran</h2><br>
+                <p>Anda telah terdaftar dengan no registrasi : <b>{{ $regisuser->no_registrasi }}</b></p><br>
                 <p>Silahkan melakukan pembayaran ke : </p>
                 <p>BRI <b>728301011874538</b> a.n <b>Luh Komang Winda Sucipta Dewi</b></p><br>
                 <p>atau</p><br>

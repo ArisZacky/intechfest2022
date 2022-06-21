@@ -35,6 +35,11 @@
                         <img src="{{ asset('assets') }}/logo/INTECH FEST.png" alt="" icon>
                         <p>PNBCTF</p>
                     </a>
+                @elseif ($status == 'diterima')
+                <a href="#" class="d-active">
+                        <img src="{{ asset('assets') }}/logo/INTECH FEST.png" alt="" icon>
+                        <p>Profile Peserta</p>
+                    </a>
                 @else
                     <a href="#" class="d-active">
                         <img src="{{ asset('assets') }}/logo/INTECH FEST.png" alt="" icon>

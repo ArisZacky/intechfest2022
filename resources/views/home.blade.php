@@ -340,10 +340,10 @@
                 <p>Kampus Bukit, Jimbaran, South Kuta, Badung Regency, Bali 80364</p>
             </li>
             <li><i class="fa fa-phone"></i>
-                <p>62 822-8199-3081</p>
+                <p><a href="https://api.whatsapp.com/send/?phone=%2B628980281616&text&app_absent=0" target="_blank" class="contactPerson">62 898-0281-616 </a>(Ferlyn)</p>
             </li>
             <li><i class="fa fa-phone"></i>
-                <p>62 831-1419-4898</p>
+                <p><a href="https://api.whatsapp.com/send/?phone=%2B6289680321813&text&app_absent=0" target="_blank" class="contactPerson">62 896-8032-1813 </a>(Diva)</p>
             </li>
         </ul>
         <!-- <ul class="footer-info group-2">

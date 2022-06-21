@@ -581,6 +581,10 @@ nav {
 .footer-box > div > a:hover span {
   display: block;
 }
+.contactPerson {
+  color: var(--dark);
+  text-decoration: none;
+}
 /* FOOTER END */
 /* ---INDEX PAGE END--- */
 /* ---AUTH PAGE START--- */
@@ -853,6 +857,19 @@ nav {
 }
 .dashboard-content > img {
   width: 30%;
+}
+.dashboard-content .tabel{
+  text-align: left;
+  padding: 8px;
+}
+.dashboard-content .verified{
+  text-align: left;
+  padding: 8px;
+  background: #00FF00;
+  display: inline;
+  float: left;
+  clear: both;
+  border-radius: 25px;
 }
 .dashboard-ribbon {
   /* position: relative; */
