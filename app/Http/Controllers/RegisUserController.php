@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\RegisUser;
 use App\Models\User;
+use App\Models\PnbwdcProjects;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
@@ -21,6 +22,7 @@ class RegisUserController extends Controller
             $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
             $status = '';
             $lomba = 1;
+            $project = PnbwdcProjects::where(['regis_user_id' => $user->id])->first();
             if ($user !=null) {
                $status = $user->status_pembayaran;
             }
@@ -28,7 +30,8 @@ class RegisUserController extends Controller
                 'data' => 'pnbwdc',
                 'status' => $status,
                 'regisuser' => $user,
-                'lomba' => $lomba
+                'lomba' => $lomba,
+                'project' => $project
             ]);
         }
         else{

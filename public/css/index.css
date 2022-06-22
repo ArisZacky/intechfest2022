@@ -859,8 +859,14 @@ nav {
   width: 30%;
 }
 .dashboard-content .tabel{
+  border-style: solid;
   text-align: left;
   padding: 8px;
+}
+.dashboard-content .tabel-update{
+  border-style: solid;
+  text-align: left;
+  padding: .8px;
 }
 .dashboard-content .verified{
   text-align: left;

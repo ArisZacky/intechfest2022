@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\RegisUser;
-use App\Models\PnbdcProjects;
+use App\Models\PnbwdcProjects;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
-class UploadProjectController extends Controller
+class UploadProjectWDCController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +18,7 @@ class UploadProjectController extends Controller
     public function index()
     {
         $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
-        if (!PnbdcProjects::where(['regis_user_id' => $user->id])->exists() && $user->competition_id == 2) {
+        if (!PnbwdcProjects::where(['regis_user_id' => $user->id])->exists() && $user->competition_id == 1) {
             return view('peserta.form_uploadproject');
         }
         else return "<script>
@@ -45,20 +46,27 @@ class UploadProjectController extends Controller
     public function store(Request $request)
     {
         $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
-        if (!PnbdcProjects::where(['regis_user_id' => $user->id])->exists() && $user->competition_id == 2) {
+        if (!PnbwdcProjects::where(['regis_user_id' => $user->id])->exists() && $user->competition_id == 1) {
+            // dd($_POST);
             $request->validate([
+                'nama' => 'required',
                 'project' => 'required',
                 'submit' => 'required'
             ]);
 
-            $proses = PnbdcProjects::create([
+            date_default_timezone_set('Asia/Singapore');
+            $nama_project = Str::replace(' ', '_', $request->nama).date('_d_m_Y-H_i_s').".zip";
+            
+            $proses = PnbwdcProjects::create([
                 'regis_user_id' => $user->id,
-                'project' => $request->link_figma
+                'project' => $nama_project
             ]);
+
+            $request->file('project')->move(public_path('img_pendaftaran'),$nama_project);
 
             if ($proses) {
                 return "<script>
-                        alert('Upload Link sukses');
+                        alert('Upload Project sukses');
                         location.href = '/peserta'
                     </script>";
             }
@@ -104,6 +112,10 @@ class UploadProjectController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $project = PnbwdcProjects::find($id);
+        $project->project = $request->input('project');
+        $project->update();
+        return redirect()->route("peserta")->with('status','Student Updated Successfully');
     }
 
     /**

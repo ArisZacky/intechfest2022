@@ -45,4 +45,8 @@ class RegisUser extends Model
     public function pnbdcproject(){
         return $this->hasOne(PnbdcProjects::class);
     }
+
+    public function pnbwdcproject(){
+        return $this->hasOne(PnbwdcProjects::class);
+    }
 }

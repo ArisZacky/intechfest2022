@@ -80,11 +80,63 @@
             <td class="tabel">:</td>
             <td class="verified">Verified</td>
         </tr>
-            <tr>
-                <td class="tabel">Upload Project</td>
-                <td class="tabel">:</td>
-                <td class="tabel"><input type="file" name="bukti_pembayaran" id=""></td>
-            </tr>
+        @if($lomba == 1 && empty($project->regis_user_id))
+        <tr>
+            <td class="tabel">Upload Project</td>
+            <td class="tabel">:</td>
+            <td class="tabel">
+                <form action="{{ route('UploadProjectWDC.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
+                    <input type="file" name="project" id="">
+                    <input type="submit" value="Daftar" name="submit" class="primary-button">
+                </form>
+            </td>
+        </tr>
+        @elseif($lomba == 1 && $project->regis_user_id != null)
+        <tr>
+            <td class="tabel">Upload Project</td>
+            <td class="tabel">:</td>
+            <td class="tabel-update">
+                <form action="{{ route('UploadProjectWDC.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
+                    <input type="file" name="project" id="">
+                    <input type="submit" value="Daftar" name="submit" class="primary-button">
+                    <br><a href="{{$project->project}}" download="{{$project->project}}">View Project</a>
+                </form>
+            </td>            
+        </tr>
+        @elseif($lomba == 2 && empty($project->regis_user_id))
+        <tr>
+        <td class="tabel">Upload Project</td>
+            <td class="tabel">:</td>
+            <td class="tabel">
+                <form action="{{ route('UploadProject.store') }}" method="POST">
+                @csrf
+                    <input type="file" name="project" id="" onchange="this.form.submit()">
+                </form>
+            </td>
+        </tr>
+        @elseif($lomba == 2 && $project->regis_user_id != null)
+        <tr>
+            <td class="tabel">Upload Project</td>
+            <td class="tabel">:</td>
+            <td class="tabel">
+                <form action="{{ route('UploadProjectWDC.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
+                    <input type="file" name="project" id="">
+                    <input type="submit" value="Daftar" name="submit" class="primary-button">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td><a href="{{ asset('assets/logo/INTECH FEST.png') }}">View Project</a></td>
+        </tr>
+        @endif
         </table>
         @endif
         @if ($status == 'sudah bayar')
