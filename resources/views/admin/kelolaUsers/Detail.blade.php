@@ -20,6 +20,7 @@
     Instansi : {{ $kelolaUser->instansi }} <br>
     Status Bayar : <b>{{ $kelolaUser->status_pembayaran }}</b> <br>
   <div>  Bukti Pembayaran : <a class="example-image-link" href="{{ asset('img_pembayaran') }}/{{ $kelolaUser->payment->bukti_pembayaran }}" data-lightbox="example-2"><img style="width: 100px; height:70px;" src="{{ asset('img_pembayaran') }}/{{ $kelolaUser->payment->bukti_pembayaran }}" alt=""></a></div> <br>
+    <input type="hidden" name="status_pembayaran" value="diterima">
     <input class="btn-terima" type="submit" name="submit" id="" value="Terima Peserta" onclick = "return confirm('Yakin terima Peserta?')">
 </form>
 </div>

@@ -94,8 +94,9 @@ class KelolaUserController extends Controller
      */
     public function update(Request $request, RegisUser $kelolaUser)
     {
-        $kelolaUser->update(['status_pembayaran'=>'diterima']);
-        
+        // dd($_POST);
+        $kelolaUser->status_pembayaran = $request->status_pembayaran;
+        $kelolaUser->update();
         return "<script>
                     alert('Sukses menerima peserta!');
                     location.href = '/kelolaUsers'

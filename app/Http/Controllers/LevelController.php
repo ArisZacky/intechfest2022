@@ -9,15 +9,14 @@ class LevelController extends Controller
 {
     //
     public function level() {
-        if(Auth::user()->level == 'admin'){
+        if(Auth::user()->level == 'peserta'){
+            return redirect()->action([RegisUserController::class, 'index']);
+        }
+        elseif(Auth::user()->level == 'admin'){
             return view('admin.dashboard',[
                 "title" => "Home",
                 "judul" => "Selamat datang di Dashboard Intech Fest Admin ".Auth::user()->email.""
             ]);
-        }
-        else{
-            return redirect()->action([RegisUserController::class, 'index']);
-        }
-       
+        }      
     }
 }

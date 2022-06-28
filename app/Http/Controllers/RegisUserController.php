@@ -22,7 +22,7 @@ class RegisUserController extends Controller
             $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
             $status = '';
             $lomba = 1;
-            $project = PnbwdcProjects::where(['regis_user_id' => $user->id])->first();
+            // $project = PnbwdcProjects::where(['regis_user_id' => $user->id])->first();
             if ($user !=null) {
                $status = $user->status_pembayaran;
             }
@@ -31,7 +31,7 @@ class RegisUserController extends Controller
                 'status' => $status,
                 'regisuser' => $user,
                 'lomba' => $lomba,
-                'project' => $project
+                // 'project' => $project
             ]);
         }
         else{
@@ -147,7 +147,7 @@ class RegisUserController extends Controller
             'instansi' => $request->instansi,
         ]);
 
-        $request->file('foto_ktm_kts_ktp')->move(public_path('img_pendaftaran'),$nama_foto);
+        $request->file('foto_ktm_kts_ktp')->move(public_path().'/img_pendaftaran/',$nama_foto);
         User::where('id',Auth::user()->id)->update(['status' => 'sudah daftar']);
         
         return "<script>
