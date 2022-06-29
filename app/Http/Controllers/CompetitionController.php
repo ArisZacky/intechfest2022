@@ -17,10 +17,10 @@ class CompetitionController extends Controller
     {
         if(Auth::user()->level == 'admin'){
             if($request->has('cari')){
-                $competitions = Competition::where('nama_lomba','LIKE','%'.$request->cari.'%')->orderBy('id','desc')->get();
+                $competitions = Competition::where('nama_lomba','LIKE','%'.$request->cari.'%')->orderBy('id','asc')->get();
             }
             else{
-                $competitions = Competition::orderBy('id','desc')->get();
+                $competitions = Competition::orderBy('id','asc')->get();
             }
             return view('admin.competitions.index',compact('competitions'),[
                 "title" => "Lomba",
