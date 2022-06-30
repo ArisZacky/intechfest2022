@@ -30,11 +30,11 @@
         <tr>
             <td class="tabel">Kategori Lomba</td>
             <td class="tabel">:</td>
-            @if($lomba == 1)
+            @if($regisuser->competition_id == 1)
             <td class="tabel">Politeknik Negeri Bali Web Design Competition</td>
-            @elseif($lomba == 2)
+            @elseif($regisuser->competition_id == 2)
             <td class="tabel">Politeknik Negeri Bali Design Challenge</td>
-            @elseif($lomba == 3)
+            @elseif($regisuser->competition_id == 3)
             <td class="tabel">Politeknik Negeri Bali Capture The Flags</td>
             @endif
         </tr>
@@ -48,7 +48,7 @@
             <td class="tabel">:</td>
             <td class="tabel">{{$regisuser->nim_nis_nik}}</td>
         </tr>
-        @if($lomba == 1 || 2)
+        @if($regisuser->competition_id == 1 || 2)
         <tr>
             <td class="tabel">Instansi</td>
             <td class="tabel">:</td>
@@ -80,61 +80,72 @@
             <td class="tabel">:</td>
             <td class="verified">Verified</td>
         </tr>
-        @if($lomba == 1 && empty($project->regis_user_id))
+        @if($regisuser->competition_id == 1 && empty($project->regis_user_id))
         <tr>
-            <td class="tabel">Upload Project</td>
+            <td class="tabel">Upload Project
+            <p style="font-size: 10px">Pastikan file berupa zip, rar & size < 50mb</p></td>
             <td class="tabel">:</td>
             <td class="tabel">
                 <form action="{{ route('UploadProjectWDC.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                     <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
                     <input type="file" name="project" id="">
+                    <br>
                     <input type="submit" value="Daftar" name="submit" class="primary-button">
                 </form>
             </td>
         </tr>
-        @elseif($lomba == 1 && $project->regis_user_id != null)
+        @elseif($regisuser->competition_id == 1 && $project->regis_user_id != null)
         <tr>
-            <td class="tabel">Upload Project</td>
+            <td class="tabel">Upload Project <br>
+            <p style="font-size: 10px">Pastikan file berupa zip, rar & size < 50mb</p></td>
             <td class="tabel">:</td>
             <td class="tabel-update">
-                <form action="{{ route('UploadProjectWDC.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('UploadProjectWDC.update', $project->regis_user_id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                     <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
-                    <input type="file" name="project" id="">
+                    <input type="file" name="project" id=""><br>
                     <input type="submit" value="Daftar" name="submit" class="primary-button">
-                    <br><a href="{{$project->project}}" download="{{$project->project}}">View Project</a>
+                    <a class="link" href="{{ asset('project_pnbwdc') }}/{{ $project->project }}" download="{{ asset('project_pnbwdc') }}/{{ $project->project }}">View Project</a>
                 </form>
             </td>            
         </tr>
-        @elseif($lomba == 2 && empty($project->regis_user_id))
+        @elseif($regisuser->competition_id == 2 && empty($project->regis_user_id))
         <tr>
-        <td class="tabel">Upload Project</td>
+        <td class="tabel">Upload Project
+        <p style="font-size: 10px">Pastikan file berupa zip, rar & size < 30mb</p></td>
             <td class="tabel">:</td>
             <td class="tabel">
                 <form action="{{ route('UploadProject.store') }}" method="POST">
                 @csrf
-                    <input type="file" name="project" id="" onchange="this.form.submit()">
-                </form>
-            </td>
-        </tr>
-        @elseif($lomba == 2 && $project->regis_user_id != null)
-        <tr>
-            <td class="tabel">Upload Project</td>
-            <td class="tabel">:</td>
-            <td class="tabel">
-                <form action="{{ route('UploadProjectWDC.store') }}" method="POST" enctype="multipart/form-data">
-                @csrf
                     <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
                     <input type="file" name="project" id="">
+                    <br>
                     <input type="submit" value="Daftar" name="submit" class="primary-button">
                 </form>
             </td>
         </tr>
+        @elseif($regisuser->competition_id == 2 && $project->regis_user_id != null)
         <tr>
-            <td>3</td>
-            <td>3</td>
-            <td><a href="{{ asset('assets/logo/INTECH FEST.png') }}">View Project</a></td>
+            <td class="tabel">Upload Project
+            <p style="font-size: 10px">Pastikan file berupa zip, rar & size < 50mb</p></td>
+            <td class="tabel">:</td>
+            <td class="tabel">
+                <form action="{{ route('UploadProject.update', $project->regis_user_id) }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
+                    <input type="file" name="project" id="">
+                    <br>
+                    <input type="submit" value="Daftar" name="submit" class="primary-button">
+                    <a class="link" href="{{ asset('project_pnbdc') }}/{{ $project->project }}" download="{{ asset('project_pnbdc') }}/{{ $project->project }}">View Project</a>
+                </form>
+            </td>
+        </tr>
+        @elseif($regisuser->competition_id == 3)
+        <tr>
+            <td class="tabel">Link PNBCTF</td>
+            <td class="tabel">:</td>
+            <td class="tabel"><a href="{{ asset('assets/logo/INTECH FEST.png') }}">xing xeng</a></td>
         </tr>
         @endif
         </table>
@@ -149,9 +160,9 @@
                 <h2 style="padding:20px 0;color: #3e3e3e">Pembayaran</h2><br>
                 <p>Anda telah terdaftar dengan no registrasi : <b>{{ $regisuser->no_registrasi }}</b></p><br>
                 <p>Silahkan melakukan pembayaran ke : </p>
-                <p>BRI <b>728301011874538</b> a.n <b>Luh Komang Winda Sucipta Dewi</b></p><br>
+                <p>BCA <b>7721092490</b> a.n <b>NI KADEK DIVA MAYRIKA SARTANA</b></p><br>
                 <p>atau</p><br>
-                <p>DANA <b>081339821074</b> a.n <b>putuayucandradewi</b></p>
+                <p>DANA <b>089680321813</b> a.n <b>NI KADEK DIVA MAYRIKA SARTANA</b></p>
             </div>
             <form action="{{ route('payment.store') }}" style="padding-top: 40px"  method="POST" enctype="multipart/form-data">
                 @csrf

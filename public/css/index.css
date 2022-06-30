@@ -868,10 +868,14 @@ nav {
   text-align: left;
   padding: .8px;
 }
+.dashboard-content .tabel-update .link{
+  text-decoration: none;
+  color: var(--dark);
+}
 .dashboard-content .verified{
   text-align: left;
   padding: 8px;
-  background: #00FF00;
+  background: #25D366;
   display: inline;
   float: left;
   clear: both;

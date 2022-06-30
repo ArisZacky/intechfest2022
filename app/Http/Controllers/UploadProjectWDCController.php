@@ -62,7 +62,7 @@ class UploadProjectWDCController extends Controller
                 'project' => $nama_project
             ]);
 
-            $request->file('project')->move(public_path('img_pendaftaran'),$nama_project);
+            $request->file('project')->move(public_path().'/project_pnbwdc/',$nama_project);
 
             if ($proses) {
                 return "<script>
@@ -112,10 +112,39 @@ class UploadProjectWDCController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $project = PnbwdcProjects::find($id);
-        $project->project = $request->input('project');
-        $project->update();
-        return redirect()->route("peserta")->with('status','Student Updated Successfully');
+        $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
+        if (PnbwdcProjects::where(['regis_user_id' => $user->id])->exists() && $user->competition_id == 1) {
+            // dd($_POST);
+            $request->validate([
+                'nama' => 'required',
+                'project' => 'required',
+                'submit' => 'required'
+            ]);
+
+            date_default_timezone_set('Asia/Singapore');
+            $nama_project = Str::replace(' ', '_', $request->nama).date('_d_m_Y-H_i_s').".zip";
+            
+            $proses = PnbwdcProjects::query()->update([
+                'regis_user_id' => $user->id,
+                'project' => $nama_project
+            ]);
+
+            $request->file('project')->move(public_path().'/project_pnbwdc/',$nama_project);
+
+            if ($proses) {
+                return "<script>
+                        alert('Upload Project sukses');
+                        location.href = '/peserta'
+                    </script>";
+            }
+            else return "<script>
+                            alert('Upload Link Gagal');
+                            location.href = '/peserta'
+                        </script>";
+        }
+        else return "<script>
+                        location.href = '/peserta'
+                    </script>"; 
     }
 
     /**

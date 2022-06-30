@@ -33,8 +33,6 @@
             <label for="repassword">Re-Password</label>
             <input id="repassword" type="password" name="password_confirmation" required>
             <input class="auth-action" type="submit" value="Daftar Sekarang">
-            <input type="hidden" name="status" value="belum regis">
-            <input type="hidden" name="level" value="peserta">
             <a href="{{ route('login') }}">Login</a>
             <a href="{{ url('/') }}">Home</a>
             </form>

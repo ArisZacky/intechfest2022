@@ -45,6 +45,10 @@
                 <ion-icon name="ribbon-outline"></ion-icon>
                 <p>Projek PNBDC</p>
             </a>
+            <a href="{{ route('pnbwdcProjects.index') }}" class="{{ ($title === 'Projek PNBWDC') ? 'd-active' : '' }}">
+                <ion-icon name="ribbon-outline"></ion-icon>
+                <p>Projek PNBWDC</p>
+            </a>
         @endif
         <!-- <a href="">
             <img src="../assets/logo/INTECH FEST.png" alt="icon">

@@ -27,6 +27,7 @@ Route::resource('kelolaUsers', 'App\Http\Controllers\KelolaUserController')->mid
 Route::resource('pesertaLists', 'App\Http\Controllers\PesertaListController')->middleware(['auth']);
 Route::resource('pesertaAccepteds', 'App\Http\Controllers\PesertaAcceptedController')->middleware(['auth']);
 Route::resource('pnbdcProjects', 'App\Http\Controllers\PnbdcProjectController');
+Route::resource('pnbwdcProjects', 'App\Http\Controllers\PnbwdcProjectController');
 require __DIR__ . '/auth.php';
 Route::get('/daftar/{data}', [RegisUserController::class, 'create'])->middleware(['auth']);
 Route::post('/daftar/{data}', [RegisUserController::class, 'store'])->middleware(['auth']);
@@ -38,4 +39,6 @@ Route::get('/GantiPassword', [NewPasswordController::class, 'create'])->middlewa
 Route::resource('GantiPassword', 'App\Http\Controllers\ChangePasswordController')->middleware(['auth']);
 Route::resource('UploadProject', 'App\Http\Controllers\UploadProjectController')->middleware(['auth']);
 Route::resource('UploadProjectWDC', 'App\Http\Controllers\UploadProjectWDCController')->middleware(['auth']);
+Route::post('UploadProjectWDC/{id}', [UploadProjectWDCController::class, 'update'])->middleware(['auth']);
+Route::post('UploadProject/{id}', [UploadProjectController::class, 'update'])->middleware(['auth']);
 // Route::post('UploadProjectWDC', [UploadProjectWDCController::class, 'store'])->middleware(['auth']);
