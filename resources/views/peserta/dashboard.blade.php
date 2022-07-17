@@ -91,7 +91,7 @@
                     <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
                     <input type="file" name="project" id="">
                     <br>
-                    <input type="submit" value="Daftar" name="submit" class="primary-button">
+                    <input type="submit" value="Upload" name="submit" class="primary-button">
                 </form>
             </td>
         </tr>
@@ -105,7 +105,7 @@
                 @csrf
                     <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
                     <input type="file" name="project" id=""><br>
-                    <input type="submit" value="Daftar" name="submit" class="primary-button">
+                    <input type="submit" value="Upload" name="submit" class="primary-button">
                     <a class="link" href="{{ asset('project_pnbwdc') }}/{{ $project->project }}" download="{{ asset('project_pnbwdc') }}/{{ $project->project }}">View Project</a>
                 </form>
             </td>            
@@ -121,7 +121,7 @@
                     <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
                     <input type="file" name="project" id="">
                     <br>
-                    <input type="submit" value="Daftar" name="submit" class="primary-button">
+                    <input type="submit" value="Upload" name="submit" class="primary-button">
                 </form>
             </td>
         </tr>
@@ -136,7 +136,7 @@
                     <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
                     <input type="file" name="project" id="">
                     <br>
-                    <input type="submit" value="Daftar" name="submit" class="primary-button">
+                    <input type="submit" value="Upload" name="submit" class="primary-button">
                     <a class="link" href="{{ asset('project_pnbdc') }}/{{ $project->project }}" download="{{ asset('project_pnbdc') }}/{{ $project->project }}">View Project</a>
                 </form>
             </td>
