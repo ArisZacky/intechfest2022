@@ -158,13 +158,19 @@ nav {
 /* HERO START */
 .hero {
   margin-top: 80px;
+  /* padding-right: 200px; */
   width: 100%;
   height: 645px;
   position: relative;
   display: grid;
+  grid-template-columns: 2.1fr 1fr;
+  align-items: center;
   justify-content: center;
-  align-content: center;
-  text-align: center;
+  /* display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center; */
+  /* align-content: center; */
+  
 }
 .hero::before {
   content: "";
@@ -181,6 +187,10 @@ nav {
   /* background-color: var(--grey); */
   /* filter: brightness(0.97); */
   z-index: -1;
+}
+.hero-content{
+  /* background-color: red; */
+  text-align: center;
 }
 .hero-content > h1 {
   font-size: 4em;
@@ -1568,4 +1578,15 @@ nav {
 .btn-back:hover{
   background-color: rgb(211, 55, 55);
   transition: 0.9s;
+}
+
+/* ANIMATED MASCOT */
+#eySQE3VbFja1{
+  width: 500px;
+  /* margin: 10% auto; */
+  /* display: block; */
+}
+.animatedmaskot{
+  /* justify-self: center; */
+  /* width: 50%; */
 }
