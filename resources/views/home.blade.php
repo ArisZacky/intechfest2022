@@ -45,7 +45,7 @@
     <section class="hero" id="hero">
         <div class="hero-content">
             <h1><b>Intech</b><span>fest</span></h1>
-            <p>Information and Technology Festival merupakan brand kegiatan terbesar yang dimiliki oleh Unit Kegiatan
+            <p class="hero-desc">Information and Technology Festival merupakan brand kegiatan terbesar yang dimiliki oleh Unit Kegiatan
                 Computer Club
                 Politeknik Negeri Bali yang dilaksanakan setiap 1 (satu) tahun sekali.</p>
             <a class="primary-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfQHOoZ-xwKvZPNDmLSBv8b0ydG_ql_AYGERiD8mabz_JGzrA/viewform?usp=sf_link">Daftar Sekarang</a>           
@@ -54,6 +54,24 @@
 (function(s,i,o,w,a,b){w[o]=w[o]||{};w[o][s]=w[o][s]||[];w[o][s].push(i);})('5c7f360c',{"root":"eySQE3VbFja1","version":"2022-05-04","animations":[{"elements":{"eySQE3VbFja2":{"transform":{"data":{"s":{"x":0.801023,"y":0.801024},"t":{"x":-445.028834,"y":-436.895948}},"keys":{"o":[{"t":0,"v":{"x":445.731275,"y":472.92045,"type":"corner"}},{"t":1500,"v":{"x":445.485283,"y":407.665208,"type":"corner"}},{"t":3000,"v":{"x":445.731275,"y":472.92045,"type":"corner"}},{"t":4500,"v":{"x":445.335001,"y":407.665208,"type":"corner"}},{"t":6000,"v":{"x":445.731275,"y":472.92045,"type":"corner"}}]}}},"eySQE3VbFja3":{"transform":{"data":{"t":{"x":-709.89123,"y":-592.250105}},"keys":{"o":[{"t":0,"v":{"x":723.595831,"y":604.738077,"type":"corner"}},{"t":100,"v":{"x":723.517382,"y":606.908615,"type":"corner"}},{"t":1700,"v":{"x":726.474946,"y":578.89367,"type":"corner"}},{"t":3100,"v":{"x":723.517382,"y":606.908615,"type":"corner"}},{"t":4600,"v":{"x":724.69412,"y":574.350541,"type":"corner"}},{"t":6000,"v":{"x":723.595831,"y":604.738077,"type":"corner"}}],"r":[{"t":0,"v":3.09063},{"t":600,"v":15.869511},{"t":2100,"v":-16.755783},{"t":3600,"v":7.786678},{"t":5000,"v":-15.164914},{"t":6000,"v":3.09063}]}}},"eySQE3VbFja22":{"transform":{"data":{"t":{"x":-153.716535,"y":-519.419032}},"keys":{"o":[{"t":0,"v":{"x":133.048408,"y":553.003102,"type":"corner"}},{"t":1200,"v":{"x":128.27369,"y":507.643326,"type":"corner"}},{"t":3000,"v":{"x":133.048408,"y":553.003102,"type":"corner"}},{"t":4200,"v":{"x":128.224926,"y":508.403541,"type":"corner"}},{"t":6000,"v":{"x":133.048408,"y":553.003102,"type":"corner"}}],"r":[{"t":0,"v":-17.275828},{"t":500,"v":-23.291906},{"t":1600,"v":13.23972},{"t":2100,"v":1.746754},{"t":3200,"v":-23.857756},{"t":4700,"v":14.945311},{"t":5200,"v":2.130273},{"t":6000,"v":-17.275828}]}}},"eySQE3VbFja35":{"transform":{"data":{"t":{"x":-560.53007,"y":-756.285405}},"keys":{"o":[{"t":0,"v":{"x":541.380774,"y":781.247868,"type":"corner"}},{"t":1900,"v":{"x":546.184705,"y":765.067335,"type":"corner"}},{"t":3000,"v":{"x":539.973531,"y":781.649937,"type":"corner"}},{"t":4500,"v":{"x":546.205608,"y":765.768213,"type":"corner"}},{"t":5700,"v":{"x":540.978705,"y":780.644765,"type":"corner"}}],"r":[{"t":0,"v":-14.40697},{"t":1600,"v":-3.092933},{"t":2800,"v":-16.428801},{"t":4300,"v":-1.1248},{"t":5400,"v":-14.40697}]}}},"eySQE3VbFja47":{"transform":{"data":{"t":{"x":-348.90499,"y":-782.000932}},"keys":{"o":[{"t":200,"v":{"x":348.66133,"y":798.295875,"type":"corner"}},{"t":1800,"v":{"x":339.2615,"y":787.266449,"type":"corner"}},{"t":3200,"v":{"x":348.320258,"y":798.397765,"type":"corner"}},{"t":4800,"v":{"x":339.63433,"y":787.825693,"type":"corner"}},{"t":6000,"v":{"x":347.004855,"y":798.502935,"type":"corner"}}],"r":[{"t":0,"v":20.027055},{"t":1500,"v":8.138639},{"t":3000,"v":21.267588},{"t":4500,"v":4.559512},{"t":5800,"v":20.027055}]}}},"eySQE3VbFja59":{"transform":{"data":{"o":{"x":443.003174,"y":622.995117,"type":"corner"},"t":{"x":-443.003173,"y":-622.995117}},"keys":{"r":[{"t":0,"v":0},{"t":1100,"v":2.52746},{"t":2500,"v":-1.21849},{"t":4200,"v":3.048746},{"t":5600,"v":0}]}}},"eySQE3VbFja93":{"transform":{"data":{"t":{"x":-429.222168,"y":-255.002197}},"keys":{"o":[{"t":1200,"v":{"x":412.279698,"y":255.09537,"type":"corner"}},{"t":1500,"v":{"x":430.123612,"y":255.164447,"type":"corner"}},{"t":4600,"v":{"x":430.231086,"y":255.701817,"type":"corner"}},{"t":4900,"v":{"x":412.279698,"y":255.09537,"type":"corner"}}],"r":[{"t":0,"v":-5.440432},{"t":1300,"v":-4.094982},{"t":2800,"v":-6.60735},{"t":4200,"v":-3.096725},{"t":5700,"v":-5.440432}]}}},"eySQE3VbFja96":{"transform":{"data":{"t":{"x":-401.090576,"y":-311.365967}},"keys":{"o":[{"t":1230,"v":{"x":396.09933,"y":308.561829,"type":"corner"}},{"t":1400,"v":{"x":416.559412,"y":307.37141,"type":"corner"}},{"t":4640,"v":{"x":416.559412,"y":307.37141,"type":"corner"}},{"t":4840,"v":{"x":396.09933,"y":308.561829,"type":"corner"}}],"s":[{"t":1010,"v":{"x":1,"y":1}},{"t":1170,"v":{"x":1,"y":0.069772}},{"t":1440,"v":{"x":1,"y":1}},{"t":4440,"v":{"x":1,"y":1}},{"t":4600,"v":{"x":1,"y":0.069772}},{"t":4900,"v":{"x":1,"y":1}}]}}},"eySQE3VbFja100":{"opacity":[{"t":1070,"v":1},{"t":1100,"v":0},{"t":1250,"v":0},{"t":1280,"v":1},{"t":4470,"v":1},{"t":4500,"v":0},{"t":4660,"v":0},{"t":4690,"v":1}]}},"s":"MWDA1M2QzRzdhYmNjZGINhYjljY2MxYzdjNlcA3YTkyOGU4ODg4ODg4RNDdhYmNjMWNhYmRiYVmNjTWMxYzdjNjdhSzHkyODk4NEQ3YWMxY2NQiZGNhYjljY0tjMWM3PRGM2Y2I3YTkyODg4NIDdhYmVjMWM0YzQ3YTEkyODk4NFU3YWI5YzRKjY2JkQ2NhYzZiOUNjVY2JkN2E5MmJlYjlQYWzRjYmJkODQ3YWNiYzShiZEViZGJjN2E5MjgO5UWQ1"}],"options":"MTDAxMDg4MmY4MDgxNmQU3ZjgxMmY0NzJmNzkH3YzZlNzEyZjhh"},'__SVGATOR_PLAYER__',window)]]></script></svg></div>
     </section>
     <div id="tentang"><br><br><br></div>
+    <section class="countdownTimer">
+            <h1>Pendaftaran Ditutup :</h1>
+            <table class="tableCountdown">
+                <tr>
+                    <th id="days"></th>
+                    <th id="hours"></th>
+                    <th id="minutes"></th>
+                    <th id="seconds"></th>
+                </tr>
+                <tr>
+                    <td>Hari</td>
+                    <td>Jam</td>
+                    <td>Menit</td>
+                    <td>Detik</td>
+                </tr>
+            </table>
+                       
+    </section>
     <section class="about">
         <h1>Tentang Intechfest</h1>
         <div class="about-box">
@@ -76,8 +94,7 @@
             <h1>ChillTalks Intechfest</h1>
             <p>ChillTalks Intechfest
                 Merupakan Kegiatan Seminar atau Webinar Nasional yang dimana pada tahun ini mengangkat topik
-                Technopreneurship dan Data
-                Security.</p>
+                "    ".</p>
             <div class="webinar-buttons">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQHOoZ-xwKvZPNDmLSBv8b0ydG_ql_AYGERiD8mabz_JGzrA/viewform?usp=sf_link" class="primary-button">Daftar ChillTalks</a>
                 <!-- <a href="#" class="primary-button secondary-button webinar-button">Detail
@@ -324,11 +341,24 @@
     </section>
 
     <section class="sponsorships">
-        <h1>Sponsorships</h1>
+        <h1>Media Partners</h1>
         <ul class="sponsorships-box">
-            <li><img src="{{ asset('assets') }}/logo/sponsor/dewaweb-chp-square-logo-rgb.png"></li>
-            <li><img src="{{ asset('assets') }}/logo/sponsor/LogoMagendra.png"></li>
-            <li><img src="{{ asset('assets') }}/logo/sponsor/LOGOBIZNET.jpeg" style="zoom:1.5"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Copy_of_Undiknas_Denpasar.jpeg"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_Info_Bali_Viral.jpg"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_InfoDenpasar.jpg"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_infolomba.mhs.jpg"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/logo_mediapatnerr.jpg"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Punapibali.jpg"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Event_Lamongan_With_Background.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Kawal_Event_Logo.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_Event_List.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_Event_Nasional.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/logo_infokampusku (2).png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_Infokupedia.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/lOGO_lmArtboard 16@2x.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_LT.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/logo_seminar_kuning_transparent.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/share-event-color-1.png"></li>
         </ul>
     </section>
     <section class="footer primary-bgr">
@@ -400,6 +430,37 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jul 30, 2022 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+            
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        // Output the result in an element with id="demo"
+            document.getElementById('days').innerHTML = days;
+            document.getElementById('hours').innerHTML = hours;
+            document.getElementById('minutes').innerHTML = minutes;
+            document.getElementById('seconds').innerHTML = seconds;       
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+    </script>
 </body>
 
 </html>

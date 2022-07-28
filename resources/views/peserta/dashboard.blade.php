@@ -26,7 +26,7 @@
         <h2 style="padding:20px 0;color: #3e3e3e">Profile Peserta</h2><br>
         <p>Anda telah terdaftar dengan no registrasi : <b>{{ $regisuser->no_registrasi }}</b></p><br>
         @if ($status == 'diterima')
-        <table class="profilPeserta">
+        <table class="profilPeserta" >
         <tr>
             <td class="tabel">Kategori Lomba</td>
             <td class="tabel">:</td>
