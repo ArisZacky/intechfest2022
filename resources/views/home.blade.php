@@ -85,7 +85,7 @@
             </div>
         </div>
     </section>
-    <div id="chilltalks"><br><br><br></div>
+    <div id="chilltalks"><br><br><br><br><br><br>   </div>
     <section class="webinar" id="webinar">
         <div class="webinar-image">
             <img src="{{ asset('assets') }}/IllustrationOnly/WebinarIntechfest.png" alt="">
