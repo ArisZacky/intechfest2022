@@ -226,7 +226,7 @@ nav {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 20%;
   font-size: 2em;
 }
 /* COUNTDOWN END */
@@ -1099,6 +1099,20 @@ nav {
 .detail-content > div > p:nth-child(6) {
   text-align: left;
 }
+.detail-content .ctfsetter, .ctfsetter1{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+.detail-content .ctfsetter, .ctfsetter2{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+.detail-content .ctfsetter, .ctfsetter2 > a{
+  text-decoration: none;
+}
+
 .detail-back {
   display: block;
   color: var(--dark);
@@ -1633,3 +1647,7 @@ nav {
   /* justify-self: center;
   width: 50%; */
 }
+
+/* Timeline Start*/
+
+/* Timeline End */

@@ -44,6 +44,42 @@
                     dengan ketentuan umur mulai dari 16 sampai 24 tahun. Melalui kegiatan ini, diharapkan bisa berjalan
                     secara kompetitif
                     dan mampu memberikan peningkatan kualitas keterampilan dibidang UI/UX.</p>
+                    <br><hr><br>
+                    <p><strong>Problem Setters</strong></p>
+                    <table class="ctfsetter">
+                        <tr>
+                            <th class="ctfsetter1">Category</th>
+                            <th class="ctfsetter1">Problem Setter</th>
+                        </tr>
+                        <tr>
+                            <td class="ctfsetter2">Digital Forensic</td>
+                            <td class="ctfsetter2"><a href="https://github.com/aimardcr">aimardcr</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ctfsetter2">OSINT</td>
+                            <td class="ctfsetter2"><a href="https://github.com/aimardcr">aimardcr</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ctfsetter2">RE</td>
+                            <td class="ctfsetter2"><a href="https://github.com/aimardcr">aimardcr</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ctfsetter2">Android</td>
+                            <td class="ctfsetter2"><a href="https://github.com/aimardcr">aimardcr</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ctfsetter2">Crypto</td>
+                            <td class="ctfsetter2"><a href="https://merri.cx/">merricx</a> & <a href="https://github.com/aimardcr">aimardcr</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ctfsetter2">PWN</td>
+                            <td class="ctfsetter2"><a href="https://github.com/aimardcr">aimardcr</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ctfsetter2">Web</td>
+                            <td class="ctfsetter2"><a href="https://github.com/riordanz">ganezo</a></td>
+                        </tr>
+                    </table>
             </div>
             <img src="{{ asset('assets') }}/IllustrationOnly/ctfilus.png" alt="">
         </div>

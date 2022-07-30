@@ -64,13 +64,12 @@
                     <th id="seconds"></th>
                 </tr>
                 <tr>
-                    <td>Hari</td>
-                    <td>Jam</td>
-                    <td>Menit</td>
-                    <td>Detik</td>
+                    <td id="mark">Hari</td>
+                    <td id="mark2">Jam</td>
+                    <td id="mark3">Menit</td>
+                    <td id="mark4">Detik</td>
                 </tr>
-            </table>
-                       
+            </table>                      
     </section>
     <section class="about">
         <h1>Tentang Intechfest</h1>
@@ -94,7 +93,7 @@
             <h1>ChillTalks Intechfest</h1>
             <p>ChillTalks Intechfest
                 Merupakan Kegiatan Seminar atau Webinar Nasional yang dimana pada tahun ini mengangkat topik
-                "    ".</p>
+                "<i>Digital Finance</i>  dan <i>Data Security</i>".</p>
             <div class="webinar-buttons">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQHOoZ-xwKvZPNDmLSBv8b0ydG_ql_AYGERiD8mabz_JGzrA/viewform?usp=sf_link" class="primary-button">Daftar ChillTalks</a>
                 <!-- <a href="#" class="primary-button secondary-button webinar-button">Detail
@@ -432,7 +431,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Jul 30, 2022 15:37:25").getTime();
+        var countDownDate = new Date("Aug 27, 2022 15:37:25").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -457,7 +456,10 @@
         // If the count down is over, write some text 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
+            document.getElementById("days").innerHTML = "0";
+            document.getElementById("hours").innerHTML = "0";
+            document.getElementById("minutes").innerHTML = "0";
+            document.getElementById("seconds").innerHTML = "0";
         }
         }, 1000);
     </script>
