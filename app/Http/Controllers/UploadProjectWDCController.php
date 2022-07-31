@@ -71,7 +71,7 @@ class UploadProjectWDCController extends Controller
                     </script>";
             }
             else return "<script>
-                            alert('Upload Link Gagal');
+                            alert('Upload Project Gagal');
                             location.href = '/peserta'
                         </script>";
         }

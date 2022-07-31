@@ -116,26 +116,26 @@
         <p style="font-size: 10px">Pastikan file berupa zip, rar & size < 30mb</p></td>
             <td class="tabel">:</td>
             <td class="tabel">
-                <form action="{{ route('UploadProject.store') }}" method="POST">
+            <form action="{{ route('UploadProject.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                     <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
                     <input type="file" name="project" id="">
                     <br>
                     <input type="submit" value="Upload" name="submit" class="primary-button">
                 </form>
+                </form>
             </td>
         </tr>
         @elseif($regisuser->competition_id == 2 && $project->regis_user_id != null)
         <tr>
             <td class="tabel">Upload Project
-            <p style="font-size: 10px">Pastikan file berupa zip, rar & size < 50mb</p></td>
+            <p style="font-size: 10px">Pastikan file berupa zip, rar & size < 30mb</p></td>
             <td class="tabel">:</td>
-            <td class="tabel">
-                <form action="{{ route('UploadProject.update', $project->regis_user_id) }}" method="POST" enctype="multipart/form-data">
+            <td class="tabel-update">
+            <form action="{{ route('UploadProject.update', $project->regis_user_id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                     <input type="hidden" name="nama" value="{{$regisuser->nama_lengkap}}">
-                    <input type="file" name="project" id="">
-                    <br>
+                    <input type="file" name="project" id=""><br>
                     <input type="submit" value="Upload" name="submit" class="primary-button">
                     <a class="link" href="{{ asset('project_pnbdc') }}/{{ $project->project }}" download="{{ asset('project_pnbdc') }}/{{ $project->project }}">View Project</a>
                 </form>

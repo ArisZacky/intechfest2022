@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\RegisUser;
 use App\Models\User;
 use App\Models\PnbwdcProjects;
+use App\Models\PnbdcProjects;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
@@ -21,11 +22,20 @@ class RegisUserController extends Controller
         if(Auth::user()->level == 'peserta'){
             $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
             $status = '';
-            $lomba = 1;
             $project = '';
+            $lomba = RegisUser::where(['user_id' => Auth::user()->id])->value('competition_id');
+            $fix = $lomba;
+            
+// dd($lomba);
             if ($user !=null) {
-               $status = $user->status_pembayaran;
-               $project = PnbwdcProjects::where(['regis_user_id' => $user->id])->first();
+                if($fix != 1){
+                    $status = $user->status_pembayaran;
+                    $project = PnbdcProjects::where(['regis_user_id' => $user->id])->first();
+                }
+                elseif($fix == 1){
+                    $status = $user->status_pembayaran;
+                    $project = PnbwdcProjects::where(['regis_user_id' => $user->id])->first();
+                }                
             }
             if($project==null){
                 return view('peserta.dashboard',[
@@ -58,20 +68,34 @@ class RegisUserController extends Controller
             $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
             $status = '';
             $lomba = 2;
+            $project = '';
             if ($user !=null) {
                $status = $user->status_pembayaran;
+               $project = PnbdcProjects::where(['regis_user_id' => $user->id])->first();
             }
-            return view('peserta.dashboard',[
-                'data' => 'pnbdc',
-                'status' => $status,
-                'regisuser' => $user,
-                'lomba' => $lomba
-            ]);
+            if($project==null){
+                return view('peserta.dashboard',[
+                    'data' => 'pnbdc',
+                    'status' => $status,
+                    'regisuser' => $user,
+                    'lomba' => $lomba,
+                    // 'project' => $project
+                ]);
+            }elseif($project != null){
+                return view('peserta.dashboard',[
+                    'data' => 'pnbwdc',
+                    'status' => $status,
+                    'regisuser' => $user,
+                    'lomba' => $lomba,
+                    'project' => $project
+                ]);
+            }
+
         }
         else{
             return redirect()->route('login');
         }
-        
+         
     }
     
     public function indexPnbctf()
