@@ -29,15 +29,25 @@
             </h1>
             <form action="{{ route('peserta.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
+                    @if ($data == 'PNBCTF')
+                    <label for="nama_team">Nama Team</label>
+                    <input type="text" name="nama_team" id="nama_team">
+                    @endif
+                    @if ($data == 'PNBCTF')
+                    <label for="nama">Nama Ketua Team</label>
+                    <input type="text" name="nama_lengkap" id="nama">
+                    @endif
+                    @if ($data != 'PNBCTF')
                     <label for="nama">Nama</label>
                     <input type="text" name="nama_lengkap" id="nama">
+                    @endif
                     <label for="nins">
                         @if ($data == 'PNBWDC')
                             Nim (jika belum memiliki NIM sertakan “-” dalam kolom jawaban)
                         @elseif ($data == 'PNBDC')
                             Nim (jika belum memiliki NIM sertakan “-” dalam kolom jawaban)
                         @elseif ($data == 'PNBCTF')
-                            NIK (Jika belum memiliki sertakan NISN/NIM)
+                            NIK
                         @endif
                     </label>
                     <input type="text" name="nim_nisn_nik" id="nisn">
@@ -47,7 +57,7 @@
                         @elseif ($data == 'PNBDC')
                             Foto/Scan Kartu Tanda Mahasiswa (KTM)/ Surat Keterangan Mahasiswa jika ada dalam bentuk .Jpg
                         @elseif ($data == 'PNBCTF')
-                            Foto/Scan Kartu Tanda Penduduk (KTP) / ( Jika belum Memiliki KTP Sertakan Kartu Siswa (Pelajar) / Kartu Tanda Mahasiswa (Mahasiswa)) dalam bentuk .Jpg
+                            Foto/Scan Kartu Tanda Penduduk (KTP) Keseluruhan Team / ( Jika belum Memiliki KTP Sertakan Kartu Siswa (Pelajar) / Kartu Tanda Mahasiswa (Mahasiswa)) dalam bentuk .Jpg
                         @endif
                     </label><br></label>
                     <input type="file" name="foto_ktm_kts_ktp" id="foto" class="border-none">
@@ -55,17 +65,21 @@
                     <label for="jurusan">Jurusan</label>
                     <input type="text" name="jurusan" id="jurusan">
                     @endif
+                    @if ($data != 'PNBCTF')
                     <label for="kelamin">Jenis Kelamin</label>
                     <select name="jenis_kelamin" id="kelamin">
                         <option value="l">Laki-laki</option>
                         <option value="p">Perempuan</option>
                     </select>
+                    @endif
+
                     <label for="no_hp">No HP/WA</label>
                     <input type="text" name="no_hp" id="no_hp">
                     <label for="line_telegram">Id Telegram</label>
                     <input type="text" name="line_telegram" id="line_telegram">
                     <label for="alamat">Alamat</label>
                     <input type="text" name="alamat" id="alamat">
+                    @if ($data != 'PNBCTF')
                     <label for="provinsi">Provinsi</label>
                     <select name="provinsi" >
                         <option>Aceh</option>
@@ -103,6 +117,13 @@
                         <option>Papua Barat</option>
                         <option>Papua</option>
                     </select>
+                    @endif     
+                    @if ($data == 'PNBCTF')
+                    <label for="nama">Nama Anggota 1</label>
+                    <input type="text" name="nama_anggota1" id="nama_anggota1">
+                    <label for="nama">Nama Anggota 2</label>
+                    <input type="text" name="nama_anggota2" id="nama_anggota2">
+                    @endif             
                     @if ($data != 'PNBCTF')
                     <label for="instansi">
                         @if ($data == 'PNBWDC'||$data == 'PNBDC')

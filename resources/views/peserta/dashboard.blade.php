@@ -8,7 +8,7 @@
         <img src="{{ asset('assets') }}/logo/DC/Logo Type Signature Color.png" alt="">
     @endif
     @if ($data=='pnbctf' && Auth::user()->status == 'belum regis')
-        <img src="{{ asset('assets') }}/logo/INTECH FEST.png" alt="">
+        <img src="{{ asset('assets') }}/logo/CTF/Logo Type Signature Color.png" alt="">
     @endif
     @if (Auth::user()->status =='belum regis')
         @if ($data=='pnbwdc')
@@ -38,28 +38,53 @@
             <td class="tabel">Politeknik Negeri Bali Capture The Flags</td>
             @endif
         </tr>
+        @if($regisuser->competition_id != 3)
         <tr>
             <td class="tabel">Nama Peserta</td>
             <td class="tabel">:</td>
             <td class="tabel">{{$regisuser->nama_lengkap}}</td>
         </tr>
+        @elseif($regisuser->competition_id == 3)
+        <tr>
+            <td class="tabel">Nama Ketua</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->nama_lengkap}}</td>
+        </tr>
+        @endif
+        @if($regisuser->competition_id == 3)
+        <tr>
+            <td class="tabel">Nama Anggota 1</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->nama_anggota1}}</td>
+        </tr>
+        @endif
+        @if($regisuser->competition_id == 3)
+        <tr>
+            <td class="tabel">Nama Anggota 2</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->nama_anggota2}}</td>
+        </tr>
+        @endif
         <tr>
             <td class="tabel">NIM / NIK</td>
             <td class="tabel">:</td>
             <td class="tabel">{{$regisuser->nim_nis_nik}}</td>
         </tr>
-        @if($regisuser->competition_id == 1 || 2)
+        @if($regisuser->competition_id != 3)
         <tr>
             <td class="tabel">Instansi</td>
             <td class="tabel">:</td>
             <td class="tabel">{{$regisuser->instansi}}</td>
         </tr>
         @endif
+        @if($regisuser->competition_id != 3)
         <tr>
             <td class="tabel">Jurusan</td>
             <td class="tabel">:</td>
             <td class="tabel">{{$regisuser->jurusan}}</td>
         </tr>
+        @endif
+
         <tr>
             <td class="tabel">No HP</td>
             <td class="tabel">:</td>

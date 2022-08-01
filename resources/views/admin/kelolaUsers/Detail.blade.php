@@ -7,7 +7,14 @@
     @method('PUT')
     <b>No Registrasi : {{ $kelolaUser->no_registrasi }}</b><br>
     Email : {{ $kelolaUser->user->email }} <br>
+
     Nama Lengkap : {{ $kelolaUser->nama_lengkap }} <br>
+    @if($kelolaUser->nama_anggota1 != null)
+      Nama Anggota 1 : {{ $kelolaUser->nama_anggota1 }} <br>    
+    @endif
+    @if($kelolaUser->nama_anggota2 != null)
+      Nama Anggota 2 : {{ $kelolaUser->nama_anggota2 }} <br>    
+    @endif
     Nama Lomba : {{ $kelolaUser->competition->nama_lomba }} <br>
     NIM/NISN/NIK : {{ $kelolaUser->nim_nis_nik }} <br>
    <div> Foto KTM/Kartu Siswa/KTP : <a class="example-image-link" href="{{ asset('img_pendaftaran') }}/{{ $kelolaUser->foto_ktm_ks_ktp }}" data-lightbox="example-1"><img style="width: 100px; height:70px;" src="{{ asset('img_pendaftaran') }}/{{ $kelolaUser->foto_ktm_ks_ktp }}" alt=""></a> </div>

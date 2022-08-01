@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="shortcut icon" href="{{ asset('assets') }}/logo/INTECH FEST.png">
+    <link rel="shortcut icon" href="{{ asset('assets') }}/logo/IF NEW.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -32,12 +32,12 @@
                         <p>PNBDC</p>
                     </a>
                     <a href="/pesertaPNBCTF" @if($data == 'pnbctf') class="d-active" @endif>
-                        <img src="{{ asset('assets') }}/logo/INTECH FEST.png" alt="" icon>
+                        <img src="{{ asset('assets') }}/logo/CTF/Logo Light Mode.png" alt="" icon>
                         <p>PNBCTF</p>
                     </a>
                 @elseif ($status == 'diterima')
                 <a href="#" class="d-active">
-                        <img src="{{ asset('assets') }}/logo/INTECH FEST.png" alt="" icon>
+                        <img src="{{ asset('assets') }}/logo/IF NEW.png" alt="" icon>
                         <p>Profile Peserta</p>
                     </a>
                 @else
@@ -56,7 +56,7 @@
                 @endif
                 @if (Auth::user()->status !='sudah daftar')
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQHOoZ-xwKvZPNDmLSBv8b0ydG_ql_AYGERiD8mabz_JGzrA/viewform?usp=sf_link">
-                    <img src="{{ asset('assets') }}/logo/INTECH FEST.png" alt="" icon>
+                    <img src="{{ asset('assets') }}/logo/IF NEW.png" alt="" icon>
                     <p>ChillTalks</p>
                 </a>
                 @endif

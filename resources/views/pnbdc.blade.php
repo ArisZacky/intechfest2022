@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="{{ asset('assets') }}/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ asset('assets') }}/logo/IF NEW.png" sizes="32x32" />
     <title>Detail PNBDC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
         <img style="width: 200px;" src="{{ asset('assets') }}/logo/Logotype Dark Mode.png" alt="">
     </nav>
     <section class="detail-box">
-        <img src="{{ asset('assets') }}/logo/DC/Logo Type Dark Mode.png" alt="">
+        <img src="{{ asset('assets') }}/logo/DC/Logo Type Signature Color.png" alt="">
         <a href="{{ route('register') }}" class="primary-button">Daftar Sekarang</a>
         <a href="https://bit.ly/GuideBookIntechFest2021" class="primary-button">Download Guidebook</a>
         <div class="detail-content">
@@ -33,19 +33,12 @@
                 <p>Tingkat : <br><strong>Umum (16 - 24 Tahun)</strong></p>
                 <br>
                 <hr><br>
-                <p>Politeknik Negeri Bali Design Chellenge (PNBDC) Merupakan salah satu sub event perlombaan dalam
-                    kegiatan “Information
-                    and Technology Festival (Intech Fest) 2021”. Kegiatan ini akan berfokus dalam pembuatan sebuah
-                    desain UI/UX serta
-                    penyelesain suatu masalah yang nantinya akan dituangkan dalam sebuah desain yang menarik. Kegiatan
-                    ini bertujuan agar
-                    mampu memberikan penyelesaian masalah-masalah yang sering terjadi disekitar kita dengan output mampu
-                    memberikan solusi
-                    yang terbaik dan bisa diterapkan dengan bantuan teknologi seperti saat ini. Kegiatan ini ditujukan
-                    untuk khalayak umum
-                    dengan ketentuan umur mulai dari 16 sampai 24 tahun. Melalui kegiatan ini, diharapkan bisa berjalan
-                    secara kompetitif
-                    dan mampu memberikan peningkatan kualitas keterampilan dibidang UI/UX.</p>
+                <p>Politeknik Negeri Bali Design Chellenge (PNBDC) Merupakan salah satu sub event perlombaan dalam kegiatan “Information and Technology Festival (Intech Fest) 2022”.
+                    Kegiatan ini akan berfokus dalam pembuatan sebuah desain UI/UX serta penyelesain suatu masalah yang nantinya akan dituangkan dalam sebuah desain yang menarik. 
+                    Kegiatan ini bertujuan agar mampu memberikan penyelesaian masalah-masalah yang sering terjadi disekitar kita
+                    dengan output mampu memberikan solusi yang terbaik dan bisa diterapkan dengan bantuan teknologi seperti saat ini. 
+                    Kegiatan ini ditujukan untuk Mahasiswa/i perguruan tinggi se-indonesia. 
+                    Melalui kegiatan ini, diharapkan bisa berjalan secara kompetitif dan mampu memberikan peningkatan kualitas keterampilan dibidang UI/UX.</p>
             </div>
             <img src="{{ asset('assets') }}/IllustrationOnly/designdc.png" alt="">
         </div>

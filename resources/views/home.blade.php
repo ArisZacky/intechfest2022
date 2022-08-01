@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="{{ asset('assets') }}/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ asset('assets') }}/logo/IF NEW.png" sizes="32x32" />
     <title>Intechfest 2022</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
 <body id="home">
     <!-- NAVBAR START -->
     <nav class="primary-bgr">
-        <img src="{{ asset('assets') }}/logo/IF DARK MODE.png" alt="Logo">
+        <img src="{{ asset('assets') }}/logo/IF NEW.png" alt="Logo">
         <div class="nav-menu">
             <div class="nav-items">
                 <a href="#home" class="primary-link">Beranda</a>
@@ -138,7 +138,7 @@
             </div>
             <div class="lomba-content">
                 <div class="lomba-image">
-                    <img src="{{ asset('assets') }}/IllustrationOnly/WDC.png" alt="">
+                    <img src="{{ asset('assets') }}/IllustrationOnly/CTF.png" alt="">
                 </div>
                 <h2>PNBCTF</h2>
                 <p>Politeknik Negeri Bali Capture The Flags (PNBCTF) Merupakan salah satu sub event perlombaan dalam
@@ -167,8 +167,14 @@
             </li> -->
             <li class="timeline-item">
                 <div>
-                    <p>18/8/2022</p>
-                    <p><b>Technical Meeting</b></p>
+                    <p>28/8/2022</p>
+                    <p><b>Technical Meeting PNBWDC & PNBDC</b></p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div>
+                    <p>16/9/2022</p>
+                    <p><b>Technical Meeting PNBCTF</b></p>
                 </div>
             </li>
             <li class="timeline-item">
@@ -179,14 +185,14 @@
             </li>
             <li class="timeline-item">
                 <div>
-                    <p>27/9/2022</p>
-                    <p><b>Pembukaan Intechfest 2022 & Final PNBWDC</b></p>
+                    <p>1/10/2022</p>
+                    <p><b>Pembukaan Intechfest 2022 & Final</b></p>
                 </div>
             </li>
             <li class="timeline-item">
                 <div>
-                    <p>28/9/2022</p>
-                    <p><b>Final PNBDC, ChillTalks, Pengumuman juara & Penutupan Intechfest 2022</b></p>
+                    <p>2/10/2022</p>
+                    <p><b>ChillTalks, Pengumuman juara & Penutupan Intechfest 2022</b></p>
                 </div>
             </li>
         </ul>

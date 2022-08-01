@@ -147,15 +147,18 @@ class RegisUserController extends Controller
     {       
 
         $request->validate([
+            'nama_team' => 'nullable',
             'nama_lengkap' => 'required',
+            'nama_anggota1' => 'nullable',
+            'nama_anggota2' => 'nullable',
             'nim_nisn_nik' => 'required',
             'foto_ktm_kts_ktp' => 'required|mimes:jpeg,jpg,png|max:5000',
             'jurusan' => 'nullable',
-            'jenis_kelamin' => 'required',
+            'jenis_kelamin' => 'nullable',
             'no_hp' => 'required',
             'line_telegram' => 'required',
             'alamat' => 'required',
-            'provinsi' => 'required',
+            'provinsi' => 'nullable',
             'instansi' => 'nullable',
             'lomba' => 'required',
             'submit' => 'required'
@@ -169,7 +172,10 @@ class RegisUserController extends Controller
             'user_id' => Auth::user()->id,
             'competition_id' => $request->lomba,
             'no_registrasi' => $no_registrasi,
+            'nama_team' => $request->nama_team,
             'nama_lengkap' => $request->nama_lengkap,
+            'nama_anggota1' => $request->nama_anggota1,
+            'nama_anggota2' => $request->nama_anggota2,
             'nim_nis_nik' => $request->nim_nisn_nik,
             'nim_nis_nik' => $request->nim_nisn_nik,
             'foto_ktm_ks_ktp' => $nama_foto,
