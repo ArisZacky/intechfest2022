@@ -22,9 +22,9 @@
         @endif
     @endif
     @if (Auth::user()->status !='belum regis')
-    <div class="payment" style="text-align: center;background-color: #eee;width: 45%;margin:0 auto;padding: 20px">
+    <div class="payment" style="text-align: center;background-color: #ffffff;width: 45%;margin:0 auto;padding: 20px">
         <h2 style="padding:20px 0;color: #3e3e3e">Profile Peserta</h2><br>
-        <p>Anda telah terdaftar dengan no registrasi : <b>{{ $regisuser->no_registrasi }}</b></p><br>
+        <p>Anda telah terdaftar dengan no registrasi : <b>{{ $regisuser->no_registrasi }}</b></p>
         @if ($status == 'diterima')
         <table class="profilPeserta" >
         <tr>
@@ -176,21 +176,35 @@
         </table>
         @endif
         @if ($status == 'sudah bayar')
-            <h2 style="padding:20px 0;color: #3e3e3e">Pembayaran</h2><br>
-            <p>Anda telah terdaftar dengan no registrasi : <b>{{ $regisuser->no_registrasi }}</b></p><br>
-            <p>Pembayaran anda sedang di proses, mohon menunggu info lebih lanjut.</p><br><br>
+        <br>
+            <h2 style="padding:20px 0;color: #3e3e3e">Status</h2>
+            <table>
+                <tr>
+                    <td class="tabel">Status</td>
+                    <td class="tabel">:</td>
+                    <td class="unverified">Unverified</td>
+                </tr>
+            </table>
+            <p style="text-align: justify">Pembayaran anda sedang di proses, panitia akan memverifikasi akun dalam waktu <b>maksimal 2x24jam</b></p><br><br>
+            <p style="text-align: justify">Jika terdapat kendala dalam proses regitrasi / belum dikonfirmasi hingga 2x24 jam silahkan hubungi :</p>
+            <p style="text-align: justify"><a href="https://api.whatsapp.com/send/?phone=%2B628980281616&text&app_absent=0" target="_blank" class="contactPerson">62 898-0281-616 </a>(Ferlyn)</p>
+            <p style="text-align: justify"><a href="https://api.whatsapp.com/send/?phone=%2B6289680321813&text&app_absent=0" target="_blank" class="contactPerson">62 896-8032-1813 </a>(Diva)</p>
         @endif
         @if ($status == 'belum bayar')
             <div class="box-payment">
-                <h2 style="padding:20px 0;color: #3e3e3e">Pembayaran</h2><br>
-                <p>Anda telah terdaftar dengan no registrasi : <b>{{ $regisuser->no_registrasi }}</b></p><br>
+                <p>Untuk memverifikasi akun silahkan melanjutkan ke tahap pembayaran</p>
+                <h2 style="padding:20px 0;color: #3e3e3e">Pembayaran</h2>
                 <p>Silahkan melakukan pembayaran ke : </p>
                 <p>BCA <b>7721092490</b> a.n <b>NI KADEK DIVA MAYRIKA SARTANA</b></p><br>
                 <p>atau</p><br>
-                <p>DANA <b>089680321813</b> a.n <b>NI KADEK DIVA MAYRIKA SARTANA</b></p>
+                <p>DANA <b>089680321813</b> a.n <b>NI KADEK DIVA MAYRIKA SARTANA</b></p><br>
+                <p>Sejumlah</p>
+                <p><b>Rp50.000,-</b> (PNBWDC & PNBDC)</p>
+                <p><b>Rp75.000,-</b> (PNBCTF)</p>
             </div>
             <form action="{{ route('payment.store') }}" style="padding-top: 40px"  method="POST" enctype="multipart/form-data">
                 @csrf
+                <h2>Konfirmasi Pembayaran</h2>
                 <label>Upload Bukti Pembayaran :</label>
                 <input type="file" name="bukti_pembayaran" id="" style="margin:20px 0 0;">
                 <input type="submit" value="Konfirmasi Pembayaran" name="submit" class="primary-button" style="margin:20px 0;border:none;cursor: pointer;">

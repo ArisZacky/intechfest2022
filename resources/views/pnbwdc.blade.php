@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="{{ asset('assets') }}/logo/IF NEW.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ asset('assets') }}/logo/IF NEW2.png" sizes="32x32" />
     <title>Detail PNBWDC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 
 <body>
     <nav style="width: 100%;height: 60px;background-color: var(--grey); display: block; line-height: 35px;">
-        <img style="width: 200px;" src="{{ asset('assets') }}/logo/Logotype Dark Mode.png" alt="">
+        <img style="width: 200px;" src="{{ asset('assets') }}/logo/IF NEW TEXT.png" alt="">
     </nav>
     <section class="detail-box">
         <img src="{{ asset('assets') }}/logo/WDC/Logo Type Signature Color.png" alt="">

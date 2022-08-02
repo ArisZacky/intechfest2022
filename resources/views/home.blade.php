@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="{{ asset('assets') }}/logo/IF NEW.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ asset('assets') }}/logo/IF NEW2.png" sizes="32x32" />
     <title>Intechfest 2022</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -167,8 +167,14 @@
             </li> -->
             <li class="timeline-item">
                 <div>
-                    <p>28/8/2022</p>
-                    <p><b>Technical Meeting PNBWDC & PNBDC</b></p>
+                    <p>8/9/2022</p>
+                    <p><b>Technical Meeting PNBWDC</b></p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div>
+                    <p>9/9/2022</p>
+                    <p><b>Technical Meeting PNBDC</b></p>
                 </div>
             </li>
             <li class="timeline-item">
@@ -179,8 +185,8 @@
             </li>
             <li class="timeline-item">
                 <div>
-                    <p>18/9/2022</p>
-                    <p><b>Penyisihan Peserta</b></p>
+                    <p>28/9/2022</p>
+                    <p><b>Pengumuman Final Top 10</b></p>
                 </div>
             </li>
             <li class="timeline-item">
@@ -192,7 +198,7 @@
             <li class="timeline-item">
                 <div>
                     <p>2/10/2022</p>
-                    <p><b>ChillTalks, Pengumuman juara & Penutupan Intechfest 2022</b></p>
+                    <p><b>ChillTalks, Pengumuman Juara & Penutupan Intechfest 2022</b></p>
                 </div>
             </li>
         </ul>
@@ -364,10 +370,12 @@
             <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_LT.png"></li>
             <li><img src="{{ asset('assets') }}/logo/mediapartner/logo_seminar_kuning_transparent.png"></li>
             <li><img src="{{ asset('assets') }}/logo/mediapartner/share-event-color-1.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/communitypartner/anakstartup.id/Logo AnakStartup red.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/communitypartner/LOGO BALI.JS.jpg"></li>
         </ul>
     </section>
     <section class="footer primary-bgr">
-        <img src="{{ asset('assets') }}/logo/Logotype Dark Mode.png" alt="">
+        <img src="{{ asset('assets') }}/logo/IF NEW TEXT.png" alt="">
         <ul class="footer-info group-1">
             <li>Informasi</li>
             <li><i class="fa fa-envelope"></i>

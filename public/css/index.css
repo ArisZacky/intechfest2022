@@ -531,7 +531,7 @@ nav {
 .sponsorships-box {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(8, 150px);
+  grid-template-columns: repeat(9, 150px);
   grid-auto-rows: 150px;
   list-style: none;
   gap: 30px;
@@ -540,7 +540,7 @@ nav {
 
 @media only screen and (min-width: 375px) and (max-width: 812px) {
   .sponsorships-box{    
-    grid-template-columns: repeat(4, 150px);
+    grid-template-columns: repeat(3, 150px);
   }
 }
 
@@ -721,7 +721,7 @@ nav {
 /* ---PENDAFTARAN PAGE START--- */
 .daftar {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 50px 0;
   box-sizing: border-box;
   background-image: url(../assets/BGOnly/Login.png);
@@ -925,6 +925,15 @@ nav {
   text-align: left;
   padding: 8px;
   background: #25D366;
+  display: inline;
+  float: left;
+  clear: both;
+  border-radius: 25px;
+}
+.dashboard-content .unverified{
+  text-align: left;
+  padding: 8px;
+  background: #D0342C;
   display: inline;
   float: left;
   clear: both;
