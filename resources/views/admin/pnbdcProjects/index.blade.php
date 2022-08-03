@@ -23,7 +23,7 @@
                 <td> {{ $no++ }} </td>
                 <td> {{ $pnbdcProject->nama_lengkap }} </td>
                 <td> {{ $pnbdcProject->link }} </td>
-                <td><a href="{{ $pnbdcProject->link }}" rel="noopener noreferrer" target="_blank"><button>Lihat</button></a></td>
+                <td><a target="_blank" href="{{ asset('project_pnbdc') }}/{{ $pnbdcProject->project }}" download="{{ asset('project_pnbdc') }}/{{ $pnbdcProject->project }}" rel="noopener noreferrer"><button>Lihat</button></a></td>
             </tr>
         @endforeach
 </table>
