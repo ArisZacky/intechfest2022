@@ -216,7 +216,7 @@ nav {
 .countdownTimer {
   padding-top: 120px;
   width: 100%;
-  height: 500px;
+  height: 250%;
   text-align: center;
   align-items: center;
   /* padding-top: 50px; */
@@ -240,7 +240,7 @@ nav {
 }
 .about-box {
   width: 100%;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;

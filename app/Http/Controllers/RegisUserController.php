@@ -6,6 +6,7 @@ use App\Models\RegisUser;
 use App\Models\User;
 use App\Models\PnbwdcProjects;
 use App\Models\PnbdcProjects;
+use App\Models\PnbctfProjects;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
@@ -28,13 +29,18 @@ class RegisUserController extends Controller
             
 // dd($lomba);
             if ($user !=null) {
-                if($fix != 1){
+                if($fix == 1){
+                    $status = $user->status_pembayaran;
+                    $project = PnbwdcProjects::where(['regis_user_id' => $user->id])->first();
+
+                }
+                elseif($fix == 2){
                     $status = $user->status_pembayaran;
                     $project = PnbdcProjects::where(['regis_user_id' => $user->id])->first();
                 }
-                elseif($fix == 1){
+                elseif($fix == 3){
                     $status = $user->status_pembayaran;
-                    $project = PnbwdcProjects::where(['regis_user_id' => $user->id])->first();
+                    $project = PnbctfProjects::where(['regis_user_id' => $user->id])->first();
                 }                
             }
             if($project==null){

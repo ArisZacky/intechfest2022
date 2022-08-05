@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LevelController;
 use App\Http\Controllers\RegisUserController;
 use App\Http\Controllers\UploadProjectWDCController;
+use App\Http\Controllers\UploadProjectCTFController;
 use App\Http\Controllers\UploadProjectController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,7 @@ Route::resource('pesertaLists', 'App\Http\Controllers\PesertaListController')->m
 Route::resource('pesertaAccepteds', 'App\Http\Controllers\PesertaAcceptedController')->middleware(['auth']);
 Route::resource('pnbdcProjects', 'App\Http\Controllers\PnbdcProjectController');
 Route::resource('pnbwdcProjects', 'App\Http\Controllers\PnbwdcProjectController');
+Route::resource('pnbctfProjects', 'App\Http\Controllers\PnbctfProjectController');
 require __DIR__ . '/auth.php';
 Route::get('/daftar/{data}', [RegisUserController::class, 'create'])->middleware(['auth']);
 Route::post('/daftar/{data}', [RegisUserController::class, 'store'])->middleware(['auth']);
@@ -40,6 +42,8 @@ Route::get('/GantiPassword', [NewPasswordController::class, 'create'])->middlewa
 Route::resource('GantiPassword', 'App\Http\Controllers\ChangePasswordController')->middleware(['auth']);
 Route::resource('UploadProject', 'App\Http\Controllers\UploadProjectController')->middleware(['auth']);
 Route::resource('UploadProjectWDC', 'App\Http\Controllers\UploadProjectWDCController')->middleware(['auth']);
+Route::resource('UploadProjectCTF', 'App\Http\Controllers\UploadProjectCTFController')->middleware(['auth']);
 Route::post('UploadProject/{id}', [UploadProjectController::class, 'update'])->middleware(['auth']);
 Route::post('UploadProjectWDC/{id}', [UploadProjectWDCController::class, 'update'])->middleware(['auth']);
+Route::post('UploadProjectCTF/{id}', [UploadProjectCTFController::class, 'update'])->middleware(['auth']);
 // Route::post('UploadProjectWDC', [UploadProjectWDCController::class, 'store'])->middleware(['auth']);

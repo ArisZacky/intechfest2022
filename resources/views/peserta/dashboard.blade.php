@@ -46,6 +46,11 @@
         </tr>
         @elseif($regisuser->competition_id == 3)
         <tr>
+            <td class="tabel">Nama Team</td>
+            <td class="tabel">:</td>
+            <td class="tabel">{{$regisuser->nama_team}}</td>
+        </tr>
+        <tr>
             <td class="tabel">Nama Ketua</td>
             <td class="tabel">:</td>
             <td class="tabel">{{$regisuser->nama_lengkap}}</td>
@@ -166,11 +171,46 @@
                 </form>
             </td>
         </tr>
-        @elseif($regisuser->competition_id == 3)
+        @elseif($regisuser->competition_id == 3 && empty($project->regis_user_id))
         <tr>
             <td class="tabel">Link PNBCTF</td>
             <td class="tabel">:</td>
-            <td class="tabel"><a href="{{ asset('assets/logo/INTECH FEST.png') }}">xing xeng</a></td>
+            <td class="tabel"><a href="https://ctf.intechfest.cc/" >ctf.intechfest.cc</a></td>
+        </tr>
+        <tr>
+        <td class="tabel">Upload Write Up
+        <p style="font-size: 10px">Pastikan file berupa pdf</p></td>
+            <td class="tabel">:</td>
+            <td class="tabel">
+            <form action="{{ route('UploadProjectCTF.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <input type="hidden" name="nama" value="{{$regisuser->nama_team}}">
+                    <input type="file" name="project" id="">
+                    <br>
+                    <input type="submit" value="Upload" name="submit" class="primary-button">
+                </form>
+                </form>
+            </td>
+        </tr>
+        @elseif($regisuser->competition_id == 3 && $project->regis_user_id != null)
+        <tr>
+            <td class="tabel">Link PNBCTF</td>
+            <td class="tabel">:</td>
+            <td class="tabel"><a href="https://ctf.intechfest.cc/" target="_blank">ctf.intechfest.cc</a></td>
+        </tr>
+        <tr>
+            <td class="tabel">Upload Write Up
+            <p style="font-size: 10px">Pastikan file berupa pdf</p></td>
+            <td class="tabel">:</td>
+            <td class="tabel-update">
+            <form action="{{ route('UploadProjectCTF.update', $project->regis_user_id) }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                    <input type="hidden" name="nama" value="{{$regisuser->nama_team}}">
+                    <input type="file" name="project" id=""><br>
+                    <input type="submit" value="Upload" name="submit" class="primary-button">
+                    <a class="link" href="{{ asset('project_pnbctf') }}/{{ $project->project }}" download="{{ asset('project_pnbctf') }}/{{ $project->project }}">View Project</a>
+                </form>
+            </td>
         </tr>
         @endif
         </table>

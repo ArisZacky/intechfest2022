@@ -27,16 +27,14 @@
                 <br>
                 <hr>
                 <br>
-                <p>Biaya : <br><strong>Rp. 50.000</strong></p>
+                <p>Biaya : <br><strong>Rp. 75.000</strong></p>
                 <p>Tingkat : <br><strong>Umum (16 - 24 Tahun)</strong></p>
                 <br>
                 <hr><br>
-                <p> PNBCTF (Politeknik Negeri Bali Capture The Flag) merupakan salah satu sub event perlombaan yang pertama kali diadakan dalam kegiatan “Information
-                    and Technology Festival (Intech Fest) 2022”. 
-                    Kegiatan ini ditujukan untuk khalayak umum
-                    dengan ketentuan umur mulai dari 16 sampai 24 tahun. 
-                    Dengan diadakannya kompetisi PNBCTF ini diharapkan agar dapat meningkatkan minat dan bakat mahasiswa terhadap keamanan dan ancaman siber, 
-                    serta meningkatkan kemampuan mahasiswa dalam menciptakan keamanan siber dan mencegah berbagai macam ancaman siber seiring berkembangnya informasi dan teknologi.</p>
+                <p> PNBCTF (Politeknik Negeri Bali Capture The Flag) merupakan salah satu sub event perlombaan yang pertama kali diadakan dalam kegiatan “Information and Technology Festival (Intech Fest) 2022”. 
+                    Kegiatan ini ditujukan untuk khalayak umum dengan ketentuan umur mulai dari 16 sampai 24 tahun. 
+                    Dengan diadakannya kompetisi PNBCTF ini diharapkan agar dapat meningkatkan minat dan bakat generasi muda terhadap keamanan dan ancaman siber, 
+                    serta meningkatkan kemampuan generasi muda dalam menciptakan keamanan siber dan mencegah berbagai macam ancaman siber seiring berkembangnya informasi dan teknologi.</p>
                     <br><hr><br>
                     <p><strong>Problem Setters</strong></p>
                     <table class="ctfsetter">

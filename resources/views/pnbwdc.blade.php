@@ -30,7 +30,7 @@
                 <hr>
                 <br>
                 <p>Biaya : <br><strong>Rp. 50.000</strong></p>
-                <p>Tingkat : <br><strong>Sma/Smk/Sederajat & Perguruan Tinggi</strong></p>
+                <p>Tingkat : <br><strong>Perguruan Tinggi</strong></p>
                 <br>
                 <hr><br>
                 <p>Politeknik Negeri Bali Web Design Competition (PNBWDC) Merupakan salah satu sub event perlombaan dalam kegiatan 

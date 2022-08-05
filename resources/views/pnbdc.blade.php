@@ -30,7 +30,7 @@
                 <hr>
                 <br>
                 <p>Biaya : <br><strong>Rp. 50.000</strong></p>
-                <p>Tingkat : <br><strong>Umum (16 - 24 Tahun)</strong></p>
+                <p>Tingkat : <br><strong>Perguruan Tinggi</strong></p>
                 <br>
                 <hr><br>
                 <p>Politeknik Negeri Bali Design Chellenge (PNBDC) Merupakan salah satu sub event perlombaan dalam kegiatan “Information and Technology Festival (Intech Fest) 2022”.
