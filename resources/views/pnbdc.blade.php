@@ -22,7 +22,7 @@
     <section class="detail-box">
         <img src="{{ asset('assets') }}/logo/DC/Logo Type Signature Color.png" alt="">
         <a href="{{ route('register') }}" class="primary-button">Daftar Sekarang</a>
-        <a href="https://bit.ly/GuideBookIntechFest2021" class="primary-button">Download Guidebook</a>
+        <a href="https://drive.google.com/drive/folders/1AOzvsB0U3Ei88WTqjgQcxdm7IiFtQYEN?usp=sharing" class="primary-button" target="_blank">Download Guidebook</a>
         <div class="detail-content">
             <div>
                 <h1>Tentang Lomba</h1>

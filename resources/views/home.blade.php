@@ -85,7 +85,7 @@
             </div>
         </div>
     </section>
-    <div id="chilltalks"><br><br><br><br><br><br>   </div>
+    <div id="chilltalks"><br><br><br><br><br><br></div>
     <section class="webinar" id="webinar">
         <div class="webinar-image">
             <img src="{{ asset('assets') }}/IllustrationOnly/WebinarIntechfest.png" alt="">
@@ -96,7 +96,7 @@
                 Merupakan Kegiatan Seminar atau Webinar Nasional yang dimana pada tahun ini mengangkat topik
                 "<i>Digital Finance</i>  dan <i>Data Security</i>".</p>
             <div class="webinar-buttons">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQHOoZ-xwKvZPNDmLSBv8b0ydG_ql_AYGERiD8mabz_JGzrA/viewform?usp=sf_link" class="primary-button">Daftar ChillTalks</a>
+                <a onClick="chilltalks()" class="primary-button" style="color: white">Daftar ChillTalks</a>
                 <!-- <a href="#" class="primary-button secondary-button webinar-button">Detail
                     ChillTalks</a> -->
             </div>
@@ -443,6 +443,11 @@
             document.getElementById("seconds").innerHTML = "0";
         }
         }, 1000);
+    </script>
+    <script>
+    function chilltalks() {
+        alert("Pendaftaran ChillTalks belum tersedia");
+    }
     </script>
 </body>
 
