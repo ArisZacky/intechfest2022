@@ -42,7 +42,7 @@
                     </a>
                 @else
                     <a href="#" class="d-active">
-                        <img src="{{ asset('assets') }}/logo/INTECH FEST.png" alt="" icon>
+                        <img src="{{ asset('assets') }}/logo/IF NEW.png" alt="" icon>
                         <p>Pembayaran</p>
                     </a>
                     @if ($status == 'diterima')

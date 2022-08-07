@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="{{ asset('assets') }}/logo/IF NEW2.png" sizes="32x32" />
     <title>Intechfest 2022</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,7 +55,8 @@
     </section>
     <div id="timer"><br><br><br></div>
     <section class="countdownTimer">
-            <h1>Pendaftaran Ditutup :</h1>
+            <h1>Pendaftaran Ditutup :</h1><br>
+            <h2>PNBWDC & PNBDC :</h2>
             <table class="tableCountdown">
                 <tr>
                     <th id="days"></th>
@@ -69,17 +70,32 @@
                     <td id="mark3">Menit</td>
                     <td id="mark4">Detik</td>
                 </tr>
-            </table>                      
+            </table><br>
+            <h2>PNBCTF :</h2>
+            <table class="tableCountdown">
+                <tr>
+                    <th id="days2"></th>
+                    <th id="hours2"></th>
+                    <th id="minutes2"></th>
+                    <th id="seconds2"></th>
+                </tr>
+                <tr>
+                    <td id="markctf">Hari</td>
+                    <td id="markctf2">Jam</td>
+                    <td id="markctf3">Menit</td>
+                    <td id="markctf4">Detik</td>
+                </tr>
+            </table>                       
     </section>
     <div id="tentang"><br><br><br></div>
     <section class="about">
         <h1>Tentang Intechfest</h1>
         <div class="about-box">
-            <p>Kegiatan INTECH FEST 2022 mengangkat tema <i>“Creating an Advanced Future”</i>
+            <p>Kegiatan Intech Fest 2022 mengangkat tema <i>“Creating an Advanced Future”</i>
                 yang
                 terdiri dari dua
-                jenis kegiatan yaitu kompetisi untuk tingkat perguruan tinggi serta
-                Webinar Nasional.</p>
+                jenis kegiatan yaitu kompetisi untuk tingkat perguruan tinggi dan umum serta
+                webinar nasional yaitu Chill Talks yang dibuka untuk umum.</p>
             <div class="about-image">
                 <img src="{{ asset('assets') }}/IllustrationOnly/about.png" alt="">
             </div>
@@ -168,38 +184,38 @@
             </li> -->
             <li class="timeline-item">
                 <div>
-                    <p>8/9/2022</p>
+                    <p>8/Sep/2022</p>
                     <p><b>Technical Meeting PNBWDC</b></p>
                 </div>
             </li>
             <li class="timeline-item">
                 <div>
-                    <p>9/9/2022</p>
+                    <p>9/Sep/2022</p>
                     <p><b>Technical Meeting PNBDC</b></p>
                 </div>
             </li>
             <li class="timeline-item">
                 <div>
-                    <p>16/9/2022</p>
+                    <p>16/Sep/2022</p>
                     <p><b>Technical Meeting PNBCTF</b></p>
                 </div>
             </li>
             <li class="timeline-item">
                 <div>
-                    <p>28/9/2022</p>
-                    <p><b>Pengumuman Final Top 10</b></p>
+                    <p>28/Sep/2022</p>
+                    <p><b>Top 10 Announcement</b></p>
                 </div>
             </li>
             <li class="timeline-item">
                 <div>
-                    <p>1/10/2022</p>
-                    <p><b>Pembukaan Intechfest 2022 & Final</b></p>
+                    <p>1/Okt/2022</p>
+                    <p><b>Final IntechFest</b></p>
                 </div>
             </li>
             <li class="timeline-item">
                 <div>
-                    <p>2/10/2022</p>
-                    <p><b>ChillTalks, Pengumuman Juara & Penutupan Intechfest 2022</b></p>
+                    <p>2/Okt/2022</p>
+                    <p><b>Chill Talks & Awarding</b></p>
                 </div>
             </li>
         </ul>
@@ -210,7 +226,7 @@
         </div>
         <div class="affirmation-content">
             <h1>Tunggu Apalagi?</h1>
-            <p>Yuk ikutan! Ketahui batasanmu dan lewati disini! <strong>To The Next Level!</strong></p>
+            <p>Come join us! and be the next <strong>#Future Crafters!</strong></p>
             <a href="{{ route('register') }}" class="primary-button">Daftar Sekarang</a>
         </div>
     </section>
@@ -238,8 +254,7 @@
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body">
-                        Untuk peserta yang berada diluar daerah hadiah akan 
-                        dikirim melalui transfer oleh panitia penyelengara.
+                        Untuk peserta yang berada diluar daerah hadiah dalam bentuk barang akan dikirim melalui kurir dan hadiah uang tunai akan diberikan melalui transfer.
                     </div>
                     </div>
                 </div>
@@ -412,7 +427,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Aug 27, 2022 15:37:25").getTime();
+        var countDownDate = new Date("Sep 7, 2022 23:59:59").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -441,6 +456,40 @@
             document.getElementById("hours").innerHTML = "0";
             document.getElementById("minutes").innerHTML = "0";
             document.getElementById("seconds").innerHTML = "0";
+        }
+        }, 1000);
+    </script>
+        <script>
+        // Set the date we're counting down to
+        var countDownDate2 = new Date("Sep 15, 2022 23:59:59").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance = countDownDate2 - now;
+            
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        // Output the result in an element with id="demo"
+            document.getElementById('days2').innerHTML = days;
+            document.getElementById('hours2').innerHTML = hours;
+            document.getElementById('minutes2').innerHTML = minutes;
+            document.getElementById('seconds2').innerHTML = seconds;       
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("days2").innerHTML = "0";
+            document.getElementById("hours2").innerHTML = "0";
+            document.getElementById("minutes2").innerHTML = "0";
+            document.getElementById("seconds2").innerHTML = "0";
         }
         }, 1000);
     </script>

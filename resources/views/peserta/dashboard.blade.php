@@ -218,15 +218,9 @@
         @if ($status == 'sudah bayar')
         <br>
             <h2 style="padding:20px 0;color: #3e3e3e">Status</h2>
-            <table>
-                <tr>
-                    <td class="tabel">Status</td>
-                    <td class="tabel">:</td>
-                    <td class="unverified">Unverified</td>
-                </tr>
-            </table>
-            <p style="text-align: justify">Pembayaran anda sedang di proses, panitia akan memverifikasi akun dalam waktu <b>maksimal 2x24jam</b></p><br><br>
-            <p style="text-align: justify">Jika terdapat kendala dalam proses regitrasi / belum dikonfirmasi hingga 2x24 jam silahkan hubungi :</p>
+            <p class="unverified">Unverified</p><br><br><br>
+            <p style="text-align: justify">Pembayaran anda sedang diproses, panitia akan memverifikasi akun dalam waktu <b>maksimal 2x24jam</b></p><br><br>
+            <p style="text-align: justify">Jika terdapat kendala dalam proses registrasi / belum dikonfirmasi hingga 2x24 jam silahkan hubungi :</p>
             <p style="text-align: justify"><a href="https://api.whatsapp.com/send/?phone=%2B628980281616&text&app_absent=0" target="_blank" class="contactPerson">62 898-0281-616 </a>(Ferlyn)</p>
             <p style="text-align: justify"><a href="https://api.whatsapp.com/send/?phone=%2B6289680321813&text&app_absent=0" target="_blank" class="contactPerson">62 896-8032-1813 </a>(Diva)</p>
         @endif
