@@ -20,7 +20,7 @@
     <section class="detail-box">
         <img src="{{ asset('assets') }}/logo/CTF/Logo Type Signature Color.png" alt="">
         <a href="{{ route('register') }}" class="primary-button">Daftar Sekarang</a>
-        <a href="https://bit.ly/GUIDEBOOK_CTF" class="primary-button" target="_blank">Download Guidebook</a>
+        <a href="https://bit.ly/guidebook_pnbctf" class="primary-button" target="_blank">Download Guidebook</a>
         <div class="detail-content" style="margin-top: 50px">
             <div>
                 <h1>Tentang Lomba</h1>
@@ -75,7 +75,7 @@
             <img src="{{ asset('assets') }}/IllustrationOnly/ctfilus.png" alt="">
         </div>
         <a href="{{ route('register') }}" class="primary-button">Daftar Sekarang</a>
-        <a href="https://bit.ly/GuideBookIntechFest2021" class="primary-button">Download Guidebook</a>
+        <a href="https://bit.ly/guidebook_pnbctf" class="primary-button">Download Guidebook</a>
     </section>
     <a href="{{ url('/') }}" class="detail-back"><strong>Kembali</strong></a>
 </body>

@@ -12,8 +12,9 @@
     <tr>
         <td>No</td>
         <td>Nama</td>
-        <td>Link</td>
-        <td>Lihat Link</td>
+        <td>Project</td>
+        <td>Tanggal Upload</td>
+        <td>Lihat Project</td>
     </tr>
         @php
             $no = 1;
@@ -22,7 +23,8 @@
             <tr>
                 <td> {{ $no++ }} </td>
                 <td> {{ $pnbdcProject->nama_lengkap }} </td>
-                <td> {{ $pnbdcProject->link }} </td>
+                <td> {{ $pnbdcProject->project }} </td>
+                <td> {{ $pnbdcProject->updated_at }} </td>
                 <td><a target="_blank" href="{{ asset('project_pnbdc') }}/{{ $pnbdcProject->project }}" download="{{ asset('project_pnbdc') }}/{{ $pnbdcProject->project }}" rel="noopener noreferrer"><button>Lihat</button></a></td>
             </tr>
         @endforeach

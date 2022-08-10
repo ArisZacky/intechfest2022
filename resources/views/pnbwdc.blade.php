@@ -22,7 +22,7 @@
     <section class="detail-box">
         <img src="{{ asset('assets') }}/logo/WDC/Logo Type Signature Color.png" alt="">
         <a href="{{ route('register') }}" class="primary-button">Daftar Sekarang</a>
-        <a href="https://bit.ly/GUIDEBOOK_PNBWDC" class="primary-button" target="_blank">Download Guidebook</a>
+        <a href="https://bit.ly/guidebook_pnbwdc" class="primary-button" target="_blank">Download Guidebook</a>
         <div class="detail-content">
             <div>
                 <h1>Tentang Lomba</h1>
@@ -43,7 +43,7 @@
             <img src="{{ asset('assets') }}/IllustrationOnly/webwdc.png" alt="">
         </div>
         <a href="{{ route('register') }}" class="primary-button">Daftar Sekarang</a>
-        <a href="https://bit.ly/GuideBookIntechFest2021" class="primary-button">Download Guidebook</a>
+        <a href="https://bit.ly/guidebook_pnbwdc" class="primary-button">Download Guidebook</a>
     </section>
     <a href="{{ url('/') }}" class="detail-back"><strong>Kembali</strong></a>
 </body>

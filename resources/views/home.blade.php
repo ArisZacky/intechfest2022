@@ -91,7 +91,7 @@
     <section class="about">
         <h1>Tentang Intechfest</h1>
         <div class="about-box">
-            <p>Kegiatan Intech Fest 2022 mengangkat tema <i>“Creating an Advanced Future”</i>
+            <p>Kegiatan Intech Fest 2022 mengangkat tema <i>“Creating an Advance Future”</i>
                 yang
                 terdiri dari dua
                 jenis kegiatan yaitu kompetisi untuk tingkat perguruan tinggi dan umum serta
