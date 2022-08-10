@@ -300,6 +300,10 @@ nav {
   /* background-color: var(--grey); */
   /* filter: brightness(0.96); */
 }
+.webinar-info{
+  margin: auto;
+  padding: 10px;
+}
 .webinar-info > p {
   padding-right: 100px;
   text-align: justify;
