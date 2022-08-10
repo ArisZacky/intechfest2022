@@ -113,7 +113,7 @@ class UploadProjectCTFController extends Controller
     {
         //
         $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
-        if (PnbctfProjects::where(['regis_user_id' => $user->id])->exists() && $user->competition_id == 1) {
+        if (PnbctfProjects::where(['regis_user_id' => $user->id])->exists() && $user->competition_id == 3) {
             // dd($_POST);
             $request->validate([
                 'nama' => 'required',

@@ -13,7 +13,6 @@
         <td>No</td>
         <td>Nama Team</td>
         <td>Project</td>
-        <td>Tanggal Upload</td>
         <td>Lihat Project</td>
     </tr>
         @php
@@ -24,7 +23,6 @@
                 <td> {{ $no++ }} </td>
                 <td> {{ $pnbctfProject->nama_team }} </td>
                 <td> {{ $pnbctfProject->project }} </td>
-                <td> {{ $pnbctfProject->updated_at }} </td>
                 <td><a target="_blank" href="{{ asset('project_pnbctf') }}/{{ $pnbctfProject->project }}" download="{{ asset('project_pnbctf') }}/{{ $pnbctfProject->project }}" rel="noopener noreferrer"><button>Lihat</button></a></td>
             </tr>
         @endforeach
