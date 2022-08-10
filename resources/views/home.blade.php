@@ -56,7 +56,7 @@
     <div id="timer"><br><br><br></div>
     <section class="countdownTimer">
             <h1>Pendaftaran Ditutup :</h1><br>
-            <h2>PNBWDC & PNBDC :</h2>
+            <h2>PNBWDC :</h2>
             <table class="tableCountdown">
                 <tr>
                     <th id="days"></th>
@@ -69,6 +69,21 @@
                     <td id="mark2">Jam</td>
                     <td id="mark3">Menit</td>
                     <td id="mark4">Detik</td>
+                </tr>
+            </table><br>
+            <h2>PNBDC :</h2>
+            <table class="tableCountdown">
+                <tr>
+                    <th id="days3"></th>
+                    <th id="hours3"></th>
+                    <th id="minutes3"></th>
+                    <th id="seconds3"></th>
+                </tr>
+                <tr>
+                    <td id="markdc">Hari</td>
+                    <td id="markdc2">Jam</td>
+                    <td id="markdc3">Menit</td>
+                    <td id="markdc4">Detik</td>
                 </tr>
             </table><br>
             <h2>PNBCTF :</h2>
@@ -425,40 +440,74 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Sep 7, 2022 23:59:59").getTime();
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Sep 7, 2022 23:59:59").getTime();
 
-        // Update the count down every 1 second
-        var x = setInterval(function() {
+            // Update the count down every 1 second
+            var x = setInterval(function() {
 
-        // Get today's date and time
-        var now = new Date().getTime();
-            
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-            
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-        // Output the result in an element with id="demo"
-            document.getElementById('days').innerHTML = days;
-            document.getElementById('hours').innerHTML = hours;
-            document.getElementById('minutes').innerHTML = minutes;
-            document.getElementById('seconds').innerHTML = seconds;       
-        // If the count down is over, write some text 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("days").innerHTML = "0";
-            document.getElementById("hours").innerHTML = "0";
-            document.getElementById("minutes").innerHTML = "0";
-            document.getElementById("seconds").innerHTML = "0";
-        }
-        }, 1000);
-    </script>
+            // Get today's date and time
+            var now = new Date().getTime();
+                
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+                
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+            // Output the result in an element with id="demo"
+                document.getElementById('days').innerHTML = days;
+                document.getElementById('hours').innerHTML = hours;
+                document.getElementById('minutes').innerHTML = minutes;
+                document.getElementById('seconds').innerHTML = seconds;       
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "0";
+                document.getElementById("hours").innerHTML = "0";
+                document.getElementById("minutes").innerHTML = "0";
+                document.getElementById("seconds").innerHTML = "0";
+            }
+            }, 1000);
+        </script>
+                <script>
+            // Set the date we're counting down to
+            var countDownDate3 = new Date("Sep 8, 2022 23:59:59").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+                
+            // Find the distance between now and the count down date
+            var distance = countDownDate3 - now;
+                
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+            // Output the result in an element with id="demo"
+                document.getElementById('days3').innerHTML = days;
+                document.getElementById('hours3').innerHTML = hours;
+                document.getElementById('minutes3').innerHTML = minutes;
+                document.getElementById('seconds3').innerHTML = seconds;       
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days3").innerHTML = "0";
+                document.getElementById("hours3").innerHTML = "0";
+                document.getElementById("minutes3").innerHTML = "0";
+                document.getElementById("seconds3").innerHTML = "0";
+            }
+            }, 1000);
+        </script>
         <script>
         // Set the date we're counting down to
         var countDownDate2 = new Date("Sep 15, 2022 23:59:59").getTime();
