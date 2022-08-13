@@ -17,13 +17,14 @@ class PesertaListController extends Controller
     public function index(Request $request)
     {
         if(Auth::user()->level == 'admin'){
-            if($request->has('cari')){
-                $pesertaLists = RegisUser::where('no_registrasi','LIKE','%'.$request->cari.'%')->orderBy('id','desc')->get();
+            if($request->has('cari')){ 
+                $pesertaLists = RegisUser::query("SELECT * FROM regis_users WHERE no_registrasi LIKE '%".$request->cari."%'")->get();
             }
             else{
                 $pesertaLists = RegisUser::orderBy('id','desc')->get();
             }
-            return view('admin.pesertaLists.index',compact('pesertaLists'),[
+
+            return view('admin.pesertaLists.index', compact('pesertaLists'), [
                 "title" => "Daftar Peserta",
                 "judul" => "Daftar Semua Peserta"
             ]);

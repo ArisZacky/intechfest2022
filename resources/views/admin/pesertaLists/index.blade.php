@@ -26,7 +26,7 @@
             <tr>
                 <td> {{ $no++ }} </td>
                 <td> {{ $pesertaList->no_registrasi }} </td>
-                <td> {{ $pesertaList->user->email }} </td>
+                <td> {{ $pesertaList->email }} </td>
                 <td> {{ $pesertaList->competition->nama_lomba }} </td>
                 <td> {{ $pesertaList->status_pembayaran }} </td>
                 <td><a href="{{ route('pesertaLists.show',$pesertaList->id) }}"><button>Detail</button></a></td>

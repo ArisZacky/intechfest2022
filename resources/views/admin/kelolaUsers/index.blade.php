@@ -25,7 +25,7 @@
             <tr>
                 <td> {{ $no++ }} </td>
                 <td> {{ $kelolaUser->no_registrasi }} </td>
-                <td> {{ $kelolaUser->user->email }} </td>
+                <td> {{ $kelolaUser->email }} </td>
                 <td> {{ $kelolaUser->competition->nama_lomba }} </td>
                 <td> {{ $kelolaUser->status_pembayaran }} </td>
                 <td><a href="{{ route('kelolaUsers.show',$kelolaUser->id) }}"><button>Detail</button></a></td>

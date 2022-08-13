@@ -115,7 +115,7 @@ class UploadProjectController extends Controller
         //
         $user = RegisUser::where(['user_id' => Auth::user()->id])->first();
         if (PnbdcProjects::where(['regis_user_id' => $user->id])->exists() && $user->competition_id == 2) {
-            // dd($_POST);
+            //dd($_POST);
             $request->validate([
                 'nama' => 'required',
                 'project' => 'required',
@@ -131,7 +131,7 @@ class UploadProjectController extends Controller
             ]);
 
             $request->file('project')->move(public_path().'/project_pnbdc/',$nama_project);
-
+            // dd($proses);
             if ($proses) {
                 return "<script>
                         alert('Upload Project sukses');

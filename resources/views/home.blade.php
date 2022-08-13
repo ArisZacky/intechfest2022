@@ -359,7 +359,7 @@
             <li><img src="{{ asset('assets') }}/logo/mediapartner/Punapibali.jpg"></li>
             <li><img src="{{ asset('assets') }}/logo/mediapartner/Event_Lamongan_With_Background.png"></li>
             <li><img src="{{ asset('assets') }}/logo/mediapartner/Kawal_Event_Logo.png"></li>
-            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_Event_List.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_Event_List.PNG"></li>
             <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_Event_Nasional.png"></li>
             <li><img src="{{ asset('assets') }}/logo/mediapartner/logo_infokampusku (2).png"></li>
             <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_Infokupedia.png"></li>
@@ -368,7 +368,7 @@
             <li><img src="{{ asset('assets') }}/logo/mediapartner/logo_seminar_kuning_transparent.png"></li>
             <li><img src="{{ asset('assets') }}/logo/mediapartner/share-event-color-1.png"></li>
             <li><img src="{{ asset('assets') }}/logo/communitypartner/anakstartup.id/Logo AnakStartup red.png"></li>
-            <li><img src="{{ asset('assets') }}/logo/communitypartner/LOGO BALI.JS.jpg"></li>
+            <li><img src="{{ asset('assets') }}/logo/communitypartner/LOGO BALI.JS.JPG"></li>
         </ul>
     </section>
     <section class="footer primary-bgr">
