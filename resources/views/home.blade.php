@@ -519,7 +519,7 @@
         </script>
         <script>
         // Set the date we're counting down to
-        var countDownDate2 = new Date("Sep 15, 2022 23:59:59").getTime();
+        var countDownDate2 = new Date("Sep 16, 2022 23:59:59").getTime();
 
         // Update the count down every 1 second
         var x2 = setInterval(function() {
