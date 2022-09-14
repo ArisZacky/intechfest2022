@@ -12,10 +12,13 @@
     @endif
     @if (Auth::user()->status =='belum regis')
         @if ($data=='pnbwdc')
-            <a href="/daftar/PNBWDC" class="primary-button">Daftar PNBWDC</a>
+            <!-- <a href="/daftar/PNBWDC" class="primary-button">Daftar PNBWDC</a> -->
+            <!-- <a href="#" class="primary-button">Pendaftaran PNBWDC Telah Ditutup</a> -->
+            <h2>Pendaftaran PNBWDC Telah Ditutup</h2>
         @endif
         @if ($data=='pnbdc')
-            <a href="/daftar/PNBDC" class="primary-button">Daftar PNBDC</a>
+            <!-- <a href="/daftar/PNBDC" class="primary-button">Daftar PNBDC</a> -->
+            <h2>Pendaftaran PNBWDC Telah Ditutup</h2>
         @endif
         @if ($data=='pnbctf')
             <a href="/daftar/PNBCTF" class="primary-button">Daftar PNBCTF</a>

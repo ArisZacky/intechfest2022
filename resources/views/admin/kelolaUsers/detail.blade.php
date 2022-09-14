@@ -6,8 +6,10 @@
     @csrf
     @method('PUT')
     <b>No Registrasi : {{ $kelolaUser->no_registrasi }}</b><br>
-    Email : {{ $kelolaUser->user->email }} <br>
-
+    Email : {{ $kelolaUser->email }} <br>
+    @if($kelolaUser->nama_team != null)
+	  Nama Tim : {{ $kelolaUser->nama_team }} <br>
+    @endif
     Nama Lengkap : {{ $kelolaUser->nama_lengkap }} <br>
     @if($kelolaUser->nama_anggota1 != null)
       Nama Anggota 1 : {{ $kelolaUser->nama_anggota1 }} <br>    

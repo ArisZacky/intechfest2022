@@ -56,8 +56,9 @@
     <div id="timer"><br><br><br></div>
     <section class="countdownTimer">
             <h1>Pendaftaran Ditutup :</h1><br>
-            <h2>PNBWDC :</h2>
-            <table class="tableCountdown">
+            <h2> Pendaftaran PNBWDC Telah Ditutup</h2>
+            <br>
+            <!-- <table class="tableCountdown">
                 <tr>
                     <th id="days"></th>
                     <th id="hours"></th>
@@ -70,9 +71,10 @@
                     <td id="mark3">Menit</td>
                     <td id="mark4">Detik</td>
                 </tr>
-            </table><br>
-            <h2>PNBDC :</h2>
-            <table class="tableCountdown">
+            </table><br> -->
+            <h2>Pendaftaran PNBDC Telah Ditutup</h2>
+            <br>
+            <!-- <table class="tableCountdown">
                 <tr>
                     <th id="days3"></th>
                     <th id="hours3"></th>
@@ -85,7 +87,7 @@
                     <td id="markdc3">Menit</td>
                     <td id="markdc4">Detik</td>
                 </tr>
-            </table><br>
+            </table><br> -->
             <h2>PNBCTF :</h2>
             <table class="tableCountdown">
                 <tr>
@@ -125,7 +127,7 @@
             <h1>ChillTalks Intechfest</h1>
             <p>ChillTalks Intechfest
                 Merupakan Kegiatan Seminar atau Webinar Nasional yang dimana pada tahun ini mengangkat topik
-                "<i>Digital Finance</i>  dan <i>Data Security</i>".</p>
+                "<i>FinTech</i>  dan <i>Data Security</i>".</p>
             <div class="webinar-buttons">
                 <a onClick="chilltalks()" class="primary-button" style="color: white">Daftar ChillTalks</a>
                 <!-- <a href="#" class="primary-button secondary-button webinar-button">Detail
@@ -199,14 +201,8 @@
             </li> -->
             <li class="timeline-item">
                 <div>
-                    <p>8/Sep/2022</p>
-                    <p><b>Technical Meeting PNBWDC</b></p>
-                </div>
-            </li>
-            <li class="timeline-item">
-                <div>
                     <p>9/Sep/2022</p>
-                    <p><b>Technical Meeting PNBDC</b></p>
+                    <p><b>Technical Meeting PNBWDC & PNBDC</b></p>
                 </div>
             </li>
             <li class="timeline-item">
@@ -307,7 +303,7 @@
                     </div>
                     <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
                     <div class="card-body">
-                        Webinar/Chillstalks dibukan untuk umum. Topik yang dibahas adalah Digital Finance dan Data Security.
+                        Webinar/Chillstalks dibukan untuk umum. Topik yang dibahas adalah FinTech dan Data Security.
                     </div>
                     </div>
                 </div>
@@ -330,23 +326,23 @@
     <section class="splide" aria-labelledby="carousel-heading">
         <h1 id="carousel-heading">Sponsorships</h1>
         <div class="splide__track">
-                <!-- <ul class="splide__list">
-                    <li class="splide__slide"><img style="width: 150px" src="{{ asset('assets') }}/logo/sponsor/dewaweb-chp-square-logo-rgb.png"></li>
-                    <li class="splide__slide"><img style="width: 150px" src="{{ asset('assets') }}/logo/sponsor/dewaweb-chp-square-logo-rgb.png"></li>
-                    <li class="splide__slide"><img style="width: 150px" src="{{ asset('assets') }}/logo/sponsor/dewaweb-chp-square-logo-rgb.png"></li>
-                    <li class="splide__slide"><img style="width: 150px" src="{{ asset('assets') }}/logo/sponsor/dewaweb-chp-square-logo-rgb.png"></li>
-                    <li class="splide__slide"><img style="width: 150px" src="{{ asset('assets') }}/logo/sponsor/dewaweb-chp-square-logo-rgb.png"></li>
-                    <li class="splide__slide"><img style="width: 150px" src="{{ asset('assets') }}/logo/sponsor/dewaweb-chp-square-logo-rgb.png"></li>
-                    <li class="splide__slide"><img style="width: 150px" src="{{ asset('assets') }}/logo/sponsor/dewaweb-chp-square-logo-rgb.png"></li>
-                    <li class="splide__slide"><img style="width: 150px" src="{{ asset('assets') }}/logo/sponsor/dewaweb-chp-square-logo-rgb.png"></li>
-                </ul> -->
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/ArdanAudio.jpg"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/Artlistics-Printing-Donatur.png"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/Bali-Advance-Solution-Advanced.png"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/KPN-PNB-Donatur.png"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/McDonalds-Donatur.png"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/Plakat-Bali-Advanced.jpg"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/PTBambooMedia.png"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/View-Kamera-Bali-Advanced.png"></li>
+                </ul>
         </div>
     </section>
 
-    <section class="sponsor">
+    <!-- <section class="sponsor">
         <h1 style="text-align:center">Sponsorships</h1>
         <h3 style="text-align:center">We are open for sponsorships</h3><br>
-    </section>
+    </section> -->
 
     <section class="sponsorships">
         <h1>Media Partners</h1>
@@ -367,8 +363,17 @@
             <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo_LT.png"></li>
             <li><img src="{{ asset('assets') }}/logo/mediapartner/logo_seminar_kuning_transparent.png"></li>
             <li><img src="{{ asset('assets') }}/logo/mediapartner/share-event-color-1.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/gudanglombaidn.jpg"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo-BEM-UM.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/Logo-EventUXID.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/teknoeventcampusbluelong.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/BEM-FT-UNIB.jpg"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/BEMP-STI-UNJ.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/mediapartner/eevent.id.png"></li>
             <li><img src="{{ asset('assets') }}/logo/communitypartner/anakstartup.id/Logo AnakStartup red.png"></li>
             <li><img src="{{ asset('assets') }}/logo/communitypartner/LOGO BALI.JS.JPG"></li>
+            <li><img src="{{ asset('assets') }}/logo/communitypartner/logo-blue-propose.png"></li>
+            <li><img src="{{ asset('assets') }}/logo/communitypartner/LOGO-CSIRT-PCR.png"></li>
         </ul>
     </section>
     <section class="footer primary-bgr">
@@ -411,30 +416,34 @@
     <div style="background-color: var(--grey); height: 30px;"></div>
     <script src="{{ asset('js') }}/script.js"></script>
     <script src="{{ asset('js') }}/splide.min.js"></script>
-    <!-- <script>
+    <script>
         var splide = new Splide( '.splide', {
         type: 'loop',
         autoplay: true,
-        perPage: 5,
+        perPage: 6,
         perMove: 1,
         interval: 3000,
         arrows: false,
         pagination: false,
-        gap: '10rem',
+        // focus: 'center',
+        gap: '30px',
         breakpoints: {
-            1024: {
-              perPage: 3,
+            1200: {
+              perPage: 4,
             },
-            640: {
-              perPage: 2,
+            812: {
+              perPage: 3,
         
             },
+            576: {
+                perPage: 2,
+            }
           },
         
         // rewind : true,
         } );
         splide.mount();
-    </script> -->
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -442,7 +451,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("Sep 7, 2022 23:59:59").getTime();
+            var countDownDate = new Date("Sep 9, 2022 16:00:00").getTime();
 
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -468,18 +477,18 @@
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("days").innerHTML = "0";
-                document.getElementById("hours").innerHTML = "0";
-                document.getElementById("minutes").innerHTML = "0";
-                document.getElementById("seconds").innerHTML = "0";
+                document.getElementById("hours").innerHTML = "";
+                document.getElementById("minutes").innerHTML = "";
+                document.getElementById("seconds").innerHTML = "";
             }
             }, 1000);
         </script>
                 <script>
             // Set the date we're counting down to
-            var countDownDate3 = new Date("Sep 8, 2022 23:59:59").getTime();
+            var countDownDate3 = new Date("Sep 9, 2022 16:00:00").getTime();
 
             // Update the count down every 1 second
-            var x = setInterval(function() {
+            var x3 = setInterval(function() {
 
             // Get today's date and time
             var now = new Date().getTime();
@@ -500,7 +509,7 @@
                 document.getElementById('seconds3').innerHTML = seconds;       
             // If the count down is over, write some text 
             if (distance < 0) {
-                clearInterval(x);
+                clearInterval(x3);
                 document.getElementById("days3").innerHTML = "0";
                 document.getElementById("hours3").innerHTML = "0";
                 document.getElementById("minutes3").innerHTML = "0";
@@ -513,7 +522,7 @@
         var countDownDate2 = new Date("Sep 15, 2022 23:59:59").getTime();
 
         // Update the count down every 1 second
-        var x = setInterval(function() {
+        var x2 = setInterval(function() {
 
         // Get today's date and time
         var now = new Date().getTime();
@@ -534,7 +543,7 @@
             document.getElementById('seconds2').innerHTML = seconds;       
         // If the count down is over, write some text 
         if (distance < 0) {
-            clearInterval(x);
+            clearInterval(x2);
             document.getElementById("days2").innerHTML = "0";
             document.getElementById("hours2").innerHTML = "0";
             document.getElementById("minutes2").innerHTML = "0";

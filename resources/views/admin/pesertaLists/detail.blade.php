@@ -3,7 +3,10 @@
 @section('content')
     <div class="detail" style="line-height: 30px">
         <b>No Registrasi : {{ $pesertaList->no_registrasi }}</b><br>
-        Email : {{ $pesertaList->user->email }} <br>
+        Email : {{ $pesertaList->email }} <br>
+        @if($pesertaList->nama_team != null)
+	    Nama Tim : {{ $pesertaList->nama_team }} <br>
+        @endif 
         Nama Lengkap : {{ $pesertaList->nama_lengkap }} <br>
         @if($pesertaList->nama_anggota1 != null)
         Nama Anggota 1 : {{ $pesertaList->nama_anggota1 }} <br>    

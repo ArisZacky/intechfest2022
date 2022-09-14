@@ -36,8 +36,8 @@
                     Dengan diadakannya kompetisi PNBCTF ini diharapkan agar dapat meningkatkan minat dan bakat generasi muda terhadap keamanan dan ancaman siber, 
                     serta meningkatkan kemampuan generasi muda dalam menciptakan keamanan siber dan mencegah berbagai macam ancaman siber seiring berkembangnya informasi dan teknologi.</p>
                     <br><hr><br>
-                    <p><strong>Problem Setters</strong></p>
-                    <table class="ctfsetter">
+                    <!-- <p><strong>Problem Setters</strong></p> -->
+                    <!-- <table class="ctfsetter">
                         <tr>
                             <th class="ctfsetter1">Category</th>
                             <th class="ctfsetter1">Problem Setter</th>
@@ -70,7 +70,7 @@
                             <td class="ctfsetter2">Web</td>
                             <td class="ctfsetter2"><a href="https://github.com/riordanz">ganezo</a></td>
                         </tr>
-                    </table>
+                    </table> -->
             </div>
             <img src="{{ asset('assets') }}/IllustrationOnly/ctfilus.png" alt="">
         </div>

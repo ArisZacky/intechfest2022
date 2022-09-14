@@ -50,7 +50,7 @@ class UploadProjectController extends Controller
             // dd($_POST);
             $request->validate([
                 'nama' => 'required',
-                'project' => 'required',
+                'project' => 'required | max:30000',
                 'submit' => 'required'
             ]);
 
@@ -118,7 +118,7 @@ class UploadProjectController extends Controller
             //dd($_POST);
             $request->validate([
                 'nama' => 'required',
-                'project' => 'required',
+                'project' => 'required | max:30000',
                 'submit' => 'required'
             ]);
 

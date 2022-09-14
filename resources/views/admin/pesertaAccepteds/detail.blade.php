@@ -4,6 +4,9 @@
 <div class="detail" style="line-height: 30px">
     <b>No Registrasi : {{ $pesertaAccepted->no_registrasi }}</b><br>
     Email : {{ $pesertaAccepted->user->email }} <br>
+    @if($pesertaAccepted->nama_team != null)
+	Nama Tim : {{ $pesertaAccepted->nama_team }} <br>
+    @endif
     Nama Lengkap : {{ $pesertaAccepted->nama_lengkap }} <br>
     @if($pesertaAccepted->nama_anggota1 != null)
         Nama Anggota 1 : {{ $pesertaAccepted->nama_anggota1 }} <br>    

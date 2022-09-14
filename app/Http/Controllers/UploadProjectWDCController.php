@@ -50,7 +50,7 @@ class UploadProjectWDCController extends Controller
             // dd($_POST);
             $request->validate([
                 'nama' => 'required',
-                'project' => 'required',
+                'project' => 'required | max:50000',
                 'submit' => 'required'
             ]);
 
@@ -117,7 +117,7 @@ class UploadProjectWDCController extends Controller
             // dd($_POST);
             $request->validate([
                 'nama' => 'required',
-                'project' => 'required',
+                'project' => 'required | max:50000',
                 'submit' => 'required'
             ]);
 
