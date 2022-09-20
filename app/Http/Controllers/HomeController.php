@@ -26,4 +26,8 @@ class HomeController extends Controller
     {
         return view('pnbctf');
     }
+    public function chilltalks()
+    {
+        return view('chilltalks');
+    }
 }

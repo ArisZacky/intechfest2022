@@ -88,7 +88,8 @@
                     <td id="markdc4">Detik</td>
                 </tr>
             </table><br> -->
-            <h2>PNBCTF :</h2>
+            <h2>Pendaftaran PNBCTF Telah Ditutup</h2>
+            <!-- <h2>PNBCTF :</h2>
             <table class="tableCountdown">
                 <tr>
                     <th id="days2"></th>
@@ -102,7 +103,7 @@
                     <td id="markctf3">Menit</td>
                     <td id="markctf4">Detik</td>
                 </tr>
-            </table>                       
+            </table>                        -->
     </section>
     <div id="tentang"><br><br><br></div>
     <section class="about">
@@ -129,9 +130,8 @@
                 Merupakan Kegiatan Seminar atau Webinar Nasional yang dimana pada tahun ini mengangkat topik
                 "<i>FinTech</i>  dan <i>Data Security</i>".</p>
             <div class="webinar-buttons">
-                <a onClick="chilltalks()" class="primary-button" style="color: white">Daftar ChillTalks</a>
-                <!-- <a href="#" class="primary-button secondary-button webinar-button">Detail
-                    ChillTalks</a> -->
+                <a class="primary-button" style="color: white" href="https://bit.ly/pendaftaran-chilltalks-intechfest2022" target="_blank">Daftar ChillTalks</a>
+                <a href="https://bit.ly/Guidebook_Chilltalk" class="primary-button secondary-button webinar-button">Guidebook ChillTalks</a>
             </div>
         </div>
     </section>
@@ -323,18 +323,26 @@
             </div>
     </section>
 
+    <section class="sponsorshipsUtama">
+        <h1>Main Sponsor</h1>
+        <div class="sponsorshipsUtama-box">
+            <a href="https://www.dewaweb.com/" target="_blank"><img src="{{ asset('assets') }}/logo/sponsor/dewaweb/dewaweb-chp-square-logo-rgb.png" alt=""></a>
+        </div>
+    </section>
+
     <section class="splide" aria-labelledby="carousel-heading">
         <h1 id="carousel-heading">Sponsorships</h1>
         <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/ArdanAudio.jpg"></li>
-                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/Artlistics-Printing-Donatur.png"></li>
                     <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/Bali-Advance-Solution-Advanced.png"></li>
-                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/KPN-PNB-Donatur.png"></li>
-                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/McDonalds-Donatur.png"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/MSProject-Advanced.jpg"></li>
                     <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/Plakat-Bali-Advanced.jpg"></li>
                     <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/PTBambooMedia.png"></li>
                     <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/View-Kamera-Bali-Advanced.png"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/ArdanAudio.jpg"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/Artlistics-Printing-Donatur.png"></li>                    
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/KPN-PNB-Donatur.png"></li>
+                    <li class="splide__slide"><img src="{{ asset('assets') }}/logo/sponsor/McDonalds-Donatur.png"></li>
                 </ul>
         </div>
     </section>
@@ -519,7 +527,7 @@
         </script>
         <script>
         // Set the date we're counting down to
-        var countDownDate2 = new Date("Sep 16, 2022 23:59:59").getTime();
+        var countDownDate2 = new Date("Sep 16, 2022 17:00:00").getTime();
 
         // Update the count down every 1 second
         var x2 = setInterval(function() {
